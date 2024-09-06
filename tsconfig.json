@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "composite": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": false,
+    "strictNullChecks": true
+  },
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src/**/*.ts", "package.json"]
+}
