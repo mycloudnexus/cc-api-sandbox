@@ -1900,6 +1900,7 @@ __metadata:
     "@types/source-map-support": "npm:^0"
     axios-mock-adapter: "npm:^1.22.0"
     concurrently: "npm:^8.2.2"
+    date-fns: "npm:^4.1.0"
     dotenv: "npm:^16.4.5"
     eslint: "npm:^9.2.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -2210,6 +2211,13 @@ __metadata:
   dependencies:
     "@babel/runtime": "npm:^7.21.0"
   checksum: 10/70b3e8ea7aaaaeaa2cd80bd889622a4bcb5d8028b4de9162cbcda359db06e16ff6e9309e54eead5341e71031818497f19aaf9839c87d1aba1e27bb4796e758a9
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "date-fns@npm:4.1.0"
+  checksum: 10/d5f6e9de5bbc52310f786099e18609289ed5e30af60a71e0646784c8185ddd1d0eebcf7c96b7faaaefc4a8366f3a3a4244d099b6d0866ee2bec80d1361e64342
   languageName: node
   linkType: hard
 

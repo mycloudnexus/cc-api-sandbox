@@ -22,17 +22,21 @@ import pinoHttp from "pino-http";
 import dotenv from "dotenv";
 
 import { Request as ExpressReq, Response as ExpressRes } from "express";
+import { HearbeatResponse } from "./handlers/heartbeat";
+import { formatDistanceToNow, differenceInMilliseconds, differenceInSeconds } from "date-fns";
 
 const log = pino({
   level: "info",
 });
 
 const startApp = async () => {
+  const startTime = Date.now();
   dotenv.config();
 
   const app = express();
 
   app.use(express.json());
+  app.set('json spaces', 4); // Mimic real api with correct formating
   app.use(
     pinoHttp({
       logger: log,
@@ -59,14 +63,27 @@ const startApp = async () => {
     },
   });
 
-  // This is an example of how to add an operation-specific implementation that will override
-  // the mock behavior of OpenApiBackend.
-  //
-  // api.register({
-  //   "Heartbeat": (_ctx, req: ExpressReq, res: ExpressRes) => {
-  //     return res.status(200).json({ msg: "JMO SAYS HI" })
-  //   }
-  // })
+  /*
+   This is an example of how to add an operation-specific implementation that will override
+   the mock behavior of OpenApiBackend. This Heartbeat response is mimicing the actual
+   returned data from the live endpoint. This could be updated to pull from the sandbox's
+   package.json if desired.
+  */
+
+  api.register({
+    "Heartbeat": (_ctx, req: ExpressReq, res: ExpressRes) => {
+      const curTime = Date.now();
+      const resJson: HearbeatResponse = {
+        name: "@console/api-sandbox",
+        now: curTime,
+        version: "30.99.8",
+        humanUptime: formatDistanceToNow(startTime, {addSuffix: true}),
+        uptime: differenceInMilliseconds(curTime, startTime),
+        uptimeSeconds: differenceInSeconds(curTime, startTime)
+      };
+      return res.status(200).json(resJson);
+    }
+  })
 
   await api.init();
   app.use((req, res, next) => {
