@@ -22,15 +22,14 @@ import pinoHttp from "pino-http";
 import dotenv from "dotenv";
 
 import { Request as ExpressReq, Response as ExpressRes } from "express";
-import { HearbeatResponse } from "./handlers/heartbeat";
-import { formatDistanceToNow, differenceInMilliseconds, differenceInSeconds } from "date-fns";
+import { setStartTime, heartbeat } from "./handlers/heartbeat";
 
 const log = pino({
   level: "info",
 });
 
 const startApp = async () => {
-  const startTime = Date.now();
+  setStartTime();
   dotenv.config();
 
   const app = express();
@@ -71,19 +70,8 @@ const startApp = async () => {
   */
 
   api.register({
-    "Heartbeat": (_ctx, req: ExpressReq, res: ExpressRes) => {
-      const curTime = Date.now();
-      const resJson: HearbeatResponse = {
-        name: "@console/api-sandbox",
-        now: curTime,
-        version: "30.99.8",
-        humanUptime: formatDistanceToNow(startTime, {addSuffix: true}),
-        uptime: differenceInMilliseconds(curTime, startTime),
-        uptimeSeconds: differenceInSeconds(curTime, startTime)
-      };
-      return res.status(200).json(resJson);
-    }
-  })
+    "Heartbeat": heartbeat
+  });
 
   await api.init();
   app.use((req, res, next) => {
