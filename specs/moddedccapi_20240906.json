@@ -7150,7 +7150,7 @@
         "summary": "Get port utilization data"
       }
     },
-    "/api/company/{companyName}/ports/{portId}/vlan{:detailed,:service)": {
+    "/api/company/{companyName}/ports/{portId}/vlan{:detailed,:service}": {
       "get": {
         "parameters": [
           {

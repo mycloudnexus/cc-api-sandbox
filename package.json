@@ -2,6 +2,7 @@
   "name": "cc-api-sandbox",
   "packageManager": "yarn@4.4.1",
   "license": "Apache-2.0",
+  "version": "0.1.0",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "@tsconfig/node20": "^20.1.4",
@@ -30,6 +31,7 @@
     "typescript-eslint": "^7.18.0"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "openapi-backend": "^5.10.6",

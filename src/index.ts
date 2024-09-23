@@ -22,17 +22,20 @@ import pinoHttp from "pino-http";
 import dotenv from "dotenv";
 
 import { Request as ExpressReq, Response as ExpressRes } from "express";
+import { setStartTime, heartbeat } from "./handlers/heartbeat";
 
 const log = pino({
   level: "info",
 });
 
 const startApp = async () => {
+  setStartTime();
   dotenv.config();
 
   const app = express();
 
   app.use(express.json());
+  app.set("json spaces", 4); // Mimic real api with correct formating
   app.use(
     pinoHttp({
       logger: log,
@@ -59,14 +62,14 @@ const startApp = async () => {
     },
   });
 
-  // This is an example of how to add an operation-specific implementation that will override
-  // the mock behavior of OpenApiBackend.
-  //
-  // api.register({
-  //   "Heartbeat": (_ctx, req: ExpressReq, res: ExpressRes) => {
-  //     return res.status(200).json({ msg: "JMO SAYS HI" })
-  //   }
-  // })
+  /*
+   * This is an example of how to add an operation-specific implementation that will override
+   * the mock behavior of OpenApiBackend. This Heartbeat response is mimicing the actual
+   * returned data from the live endpoint.
+   */
+  api.register({
+    Heartbeat: heartbeat,
+  });
 
   await api.init();
   app.use((req, res, next) => {
@@ -74,15 +77,20 @@ const startApp = async () => {
       .handleRequest(req as Request, req, res)
       .then(next)
       .catch((e: unknown) => {
-        next(e)
+        next(e);
       });
   });
   app.listen(9000, () => {
     log.info("api listen at http://localhost:9000");
   });
-}
+};
 
-void startApp().then().catch((e: unknown) => {
-    log.fatal({ error: e }, "API server failed due to uncaught exception. Terminating.");
+void startApp()
+  .then()
+  .catch((e: unknown) => {
+    log.fatal(
+      { error: e },
+      "API server failed due to uncaught exception. Terminating.",
+    );
     process.exit(1);
-});
+  });
