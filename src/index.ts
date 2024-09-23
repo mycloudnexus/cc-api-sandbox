@@ -35,7 +35,7 @@ const startApp = async () => {
   const app = express();
 
   app.use(express.json());
-  app.set('json spaces', 4); // Mimic real api with correct formating
+  app.set("json spaces", 4); // Mimic real api with correct formating
   app.use(
     pinoHttp({
       logger: log,
@@ -68,9 +68,8 @@ const startApp = async () => {
    returned data from the live endpoint. This could be updated to pull from the sandbox's
    package.json if desired.
   */
-
   api.register({
-    "Heartbeat": heartbeat
+    Heartbeat: heartbeat,
   });
 
   await api.init();
@@ -79,15 +78,20 @@ const startApp = async () => {
       .handleRequest(req as Request, req, res)
       .then(next)
       .catch((e: unknown) => {
-        next(e)
+        next(e);
       });
   });
   app.listen(9000, () => {
     log.info("api listen at http://localhost:9000");
   });
-}
+};
 
-void startApp().then().catch((e: unknown) => {
-    log.fatal({ error: e }, "API server failed due to uncaught exception. Terminating.");
+void startApp()
+  .then()
+  .catch((e: unknown) => {
+    log.fatal(
+      { error: e },
+      "API server failed due to uncaught exception. Terminating.",
+    );
     process.exit(1);
-});
+  });
