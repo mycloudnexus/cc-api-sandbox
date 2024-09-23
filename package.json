@@ -47,6 +47,11 @@
     "watch": "nodemon src/index.ts",
     "lint": "eslint --max-warnings=0 ./src",
     "clean": "tsc --build --clean",
-    "fmt": "prettier --write src/."
+    "fmt": "prettier --write src/.",
+    "postinstall": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md,yml,yaml}": "yarn run prettier --write",
+    "*.{ts,js}": "yarn run eslint --fix"
   }
 }
