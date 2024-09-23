@@ -65,8 +65,7 @@ const startApp = async () => {
   /*
    This is an example of how to add an operation-specific implementation that will override
    the mock behavior of OpenApiBackend. This Heartbeat response is mimicing the actual
-   returned data from the live endpoint. This could be updated to pull from the sandbox's
-   package.json if desired.
+   returned data from the live endpoint.
   */
   api.register({
     Heartbeat: heartbeat,

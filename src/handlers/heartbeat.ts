@@ -5,6 +5,7 @@ import {
   differenceInMilliseconds,
   differenceInSeconds,
 } from "date-fns";
+import { name as packageName, version } from "../../package.json";
 
 interface HearbeatResponse {
   name: string;
@@ -23,9 +24,9 @@ const getStartTime = (): number => startTime;
 export function heartbeat(_c: Context, _req: Request, res: Response) {
   const curTime = Date.now();
   const resJson: HearbeatResponse = {
-    name: "@console/api-sandbox",
+    name: packageName,
     now: curTime,
-    version: "30.99.8",
+    version: version,
     humanUptime: formatDistanceToNow(getStartTime(), { addSuffix: true }),
     uptime: differenceInMilliseconds(curTime, getStartTime()),
     uptimeSeconds: differenceInSeconds(curTime, getStartTime()),
