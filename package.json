@@ -10,6 +10,8 @@
     "@types/jest": "^29.5.12",
     "@types/node": "^20.16.5",
     "@types/source-map-support": "^0",
+    "@types/wait-on": "^5.3.4",
+    "axios": "^1.7.7",
     "axios-mock-adapter": "^1.22.0",
     "concurrently": "^8.2.2",
     "eslint": "^9.2.0",
@@ -28,7 +30,8 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.18.0"
+    "typescript-eslint": "^7.18.0",
+    "wait-on": "^8.0.1"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
@@ -48,7 +51,8 @@
     "lint": "eslint --max-warnings=0 ./src",
     "clean": "tsc --build --clean",
     "fmt": "prettier --write src/.",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{js,ts,json,md,yml,yaml}": "yarn run prettier --write",
