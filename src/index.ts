@@ -75,7 +75,7 @@ const startApp = async () => {
   app.use((req, res, next) => {
     void api
       .handleRequest(req as Request, req, res)
-      .then(next)
+      .then(() => next)
       .catch((e: unknown) => {
         next(e);
       });
