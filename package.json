@@ -55,7 +55,7 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.{js,ts,json,md,yml,yaml}": "yarn run prettier --write",
-    "*.{ts,js}": "yarn run eslint --fix"
+    "*.{js,ts,mjs,json,md,yml,yaml}": "yarn run prettier --write",
+    "*.{ts,js,mjs}": "yarn run eslint --fix"
   }
 }
