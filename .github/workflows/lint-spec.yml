@@ -4,11 +4,9 @@ on: [push]
 jobs:
   vacuum-lint:
     runs-on: ubuntu-24.04
+    container: dshanley/vacuum:v0.13.1
     steps:
     - uses: actions/checkout@v4
-    - name: Install Vacuum
-      run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh
-      shell: bash
     - name: Generate Vacuum HTML Report
       run: vacuum html-report specs/ccapi* report.html
       shell: bash
