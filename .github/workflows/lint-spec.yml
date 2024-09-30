@@ -1,0 +1,8 @@
+name: Vacuum open API linting 
+run-name: Linting OpenAPI spec with Vacuum
+on: [push]
+jobs:
+  vaccum-lint:
+    name: Vacuum Lint
+    run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh && vacuum lint specs/*
+    shell: bash
