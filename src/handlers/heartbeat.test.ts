@@ -1,41 +1,19 @@
-import { spawn, ChildProcess } from "child_process";
-import axios, { AxiosInstance } from "axios";
-import waitOn from "wait-on";
+import request from "supertest";
+import { createApp } from "../app";
+import express from "express";
 
 describe("the sandbox api server", () => {
-  let start: ChildProcess;
-  let client: AxiosInstance;
+  let app: express.Express;
 
-  beforeAll(() => {
-    client = axios.create({
-      baseURL: "http://localhost:9000",
-      validateStatus: () => true,
-      headers: { "Content-Type": "application/json" },
-    });
-    start = spawn("yarn", ["start"], {
-      cwd: __dirname,
-      detached: true,
-      stdio: "inherit",
-    });
-  });
-
-  afterAll(() => {
-    if (start.pid) {
-      process.kill(-start.pid);
-    }
-  });
-
-  beforeEach(async () => {
-    // Need to wait for the port to free up, otherwise every other test fails wtih "socket hang up".
-    // In theory, should just have to do a waitOn in the beforeAll statement, but something's holding on to the socket?
-    // TODO: Find out why.
-    await waitOn({ resources: ["tcp:localhost:9000"] });
+  beforeAll(async () => {
+    app = await createApp();
   });
 
   it("should return the heartbeat with the right fields", async () => {
-    const result = await client.get("/heartbeat");
+    const result = await request(app).get("/heartbeat");
+
     expect(result.status).toBe(200);
-    const data = result.data;
+    const data = result.body;
     expect(typeof data).toBe("object");
     if (typeof data != "object") return;
 
