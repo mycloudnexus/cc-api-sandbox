@@ -6,6 +6,18 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
-    - name: Lint specs with Vacuum
-      run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh && vacuum lint specs/*
+    - name: Install Vacuum
+      run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh
       shell: bash
+    - name: Generate Vacuum HTML Report
+      run: vacuum html-report specs/ccapi* report.html
+      shell: bash
+    - name: Archive Vacuum HTML Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: Vacuum HTML Report
+        path: report.html
+    - name: Lint with Vaccum
+      run: vacuum lint specs/ccapi*
+      shell: bash
+
