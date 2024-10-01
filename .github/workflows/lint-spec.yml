@@ -1,0 +1,21 @@
+name: Vacuum open API linting 
+run-name: Linting OpenAPI spec with Vacuum
+on: [push]
+jobs:
+  vacuum-lint:
+    runs-on: ubuntu-24.04
+    container: dshanley/vacuum:v0.13.1
+    steps:
+    - uses: actions/checkout@v4
+    - name: Generate Vacuum HTML Reports
+      run: mkdir -p reports; for FILEPATH in specs/ccapi*.json; do FILE="$(echo $FILEPATH  | cut -d '/' -f2 | cut -d '.' -f1)"; vacuum html-report "${FILEPATH}" "reports/report-${FILE}.html"; done
+      shell: bash
+    - name: Archive Vacuum HTML Reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: Vacuum HTML Reports
+        path: reports/*.html
+    - name: Lint with Vaccum
+      run: vacuum lint specs/ccapi* || true
+      shell: bash
+
