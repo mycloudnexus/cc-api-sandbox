@@ -7,14 +7,14 @@ jobs:
     container: dshanley/vacuum:v0.13.1
     steps:
     - uses: actions/checkout@v4
-    - name: Generate Vacuum HTML Report
-      run: vacuum html-report specs/ccapi* report.html
+    - name: Generate Vacuum HTML Reports
+      run: mkdir -p reports; for FILEPATH in specs/ccapi*.json; do FILE="$(echo $FILEPATH  | cut -d '/' -f2 | cut -d '.' -f1)"; vacuum html-report "${FILEPATH}" "reports/report-${FILE}.html"; done
       shell: bash
-    - name: Archive Vacuum HTML Report
+    - name: Archive Vacuum HTML Reports
       uses: actions/upload-artifact@v3
       with:
-        name: Vacuum HTML Report
-        path: report.html
+        name: Vacuum HTML Reports
+        path: reports/*.html
     - name: Lint with Vaccum
       run: vacuum lint specs/ccapi* || true
       shell: bash
