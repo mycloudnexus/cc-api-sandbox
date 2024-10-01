@@ -23,7 +23,7 @@ import {
 } from "date-fns";
 import { name as packageName, version } from "../../package.json";
 
-interface HearbeatResponse {
+export interface HearbeatResponse {
   name: string;
   now: number;
   uptime: number;

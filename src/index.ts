@@ -15,74 +15,32 @@
  */
 
 import "source-map-support/register";
-import OpenAPIBackend, { Request } from "openapi-backend";
-import express from "express";
 import pino from "pino";
-import pinoHttp from "pino-http";
+import { createApp } from "./app";
 import dotenv from "dotenv";
-
-import { Request as ExpressReq, Response as ExpressRes } from "express";
-import { setStartTime, heartbeat } from "./handlers/heartbeat";
 
 const log = pino({
   level: "info",
 });
 
 const startApp = async () => {
-  setStartTime();
   dotenv.config();
 
-  const app = express();
+  const app = await createApp(log);
 
-  app.use(express.json());
-  app.set("json spaces", 4); // Mimic real api with correct formating
-  app.use(
-    pinoHttp({
-      logger: log,
-    }),
-  );
-
-  const api = new OpenAPIBackend({
-    definition: process.env["SPEC_FILE"] ?? "./specs/moddedccapi_20240906.json",
-    strict: false,
-    handlers: {
-      validationFail: async (c, req: ExpressReq, res: ExpressRes) =>
-        res.status(400).json({ err: c.validation.errors }),
-      notFound: async (c, req: ExpressReq, res: ExpressRes) =>
-        res.status(404).json({ err: "not found" }),
-      notImplemented: async (c, req: ExpressReq, res: ExpressRes) => {
-        const { status, mock } = c.operation.operationId
-          ? (c.api.mockResponseForOperation(c.operation.operationId) as {
-              status: number;
-              mock: object;
-            })
-          : { status: 500, mock: {} };
-        return res.status(status).json(mock);
-      },
-    },
-  });
-
-  /*
-   * This is an example of how to add an operation-specific implementation that will override
-   * the mock behavior of OpenApiBackend. This Heartbeat response is mimicing the actual
-   * returned data from the live endpoint.
-   */
-  api.register({
-    Heartbeat: heartbeat,
-  });
-
-  await api.init();
-  app.use((req, res, next) => {
-    void api
-      .handleRequest(req as Request, req, res)
-      .then(next)
-      .catch((e: unknown) => {
-        next(e);
+  // Launch the app.
+  await new Promise<void>((resolve, reject) => {
+    try {
+      app.listen(9000, () => {
+        resolve();
       });
+    } catch (err) {
+      // We can't force upstream errors to be Error objects
+      // eslint-disable-next-line @typescript-eslint/prefer-promise-reject-errors
+      reject(err);
+    }
   });
-  app.listen(9000, () => {
-    log.info("api listen at http://localhost:9000");
-  });
+  log.info("api listen at http://localhost:9000");
 };
 
 void startApp()

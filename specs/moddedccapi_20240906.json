@@ -48,16 +48,12 @@
                               "network": {
                                 "mode": "PRIVATE",
                                 "blackListIds": [],
-                                "whiteListIds": [
-                                  "66aad8c7caac3ecbecbd8790"
-                                ]
+                                "whiteListIds": ["66aad8c7caac3ecbecbd8790"]
                               },
                               "community": {
                                 "mode": "PRIVATE",
                                 "blackListIds": [],
-                                "whiteListIds": [
-                                  "66aad8de1c740284bf0b2148"
-                                ]
+                                "whiteListIds": ["66aad8de1c740284bf0b2148"]
                               }
                             },
                             "industry": null,
@@ -74,9 +70,7 @@
                             "zip": null,
                             "phone": null,
                             "fax": null,
-                            "emailDomains": [
-                              "email.com"
-                            ],
+                            "emailDomains": ["email.com"],
                             "website": "email.com",
                             "businessType": "Internal",
                             "registeredName": "Some Registered Name",
@@ -131,9 +125,7 @@
                           "deletedAt": null,
                           "deleted": false,
                           "verified": true,
-                          "tags": [
-                            "Analytics"
-                          ],
+                          "tags": ["Analytics"],
                           "status": "ACTIVE",
                           "displayOrder": 0,
                           "groups": [],
@@ -150,10 +142,7 @@
                           "portsPending": 0,
                           "portsActive": 4,
                           "portsDisabled": 0,
-                          "categories": [
-                            "NaaS",
-                            "Enterprise"
-                          ],
+                          "categories": ["NaaS", "Enterprise"],
                           "isCloudProvider": false,
                           "signedCompanyRefId": 12,
                           "signedCompanyVerified": true,
@@ -179,10 +168,7 @@
                           "deletedAt": null,
                           "createdAt": "2024-07-12T08:27:08.033Z",
                           "updatedAt": "2024-07-12T08:40:48.135Z",
-                          "roles": [
-                            "NETWORKCONTROL",
-                            "USER"
-                          ],
+                          "roles": ["NETWORKCONTROL", "USER"],
                           "permissions": {
                             "roles": [
                               {
@@ -198,15 +184,10 @@
                                 "deletedAt": null,
                                 "displayOrder": -299,
                                 "description": "A Network Admin may create, edit, remove, and otherwise manage all of your company's ports, connections and virtual routers",
-                                "tags": [
-                                  "networkadmin",
-                                  "console"
-                                ],
+                                "tags": ["networkadmin", "console"],
                                 "createdAt": "2015-09-30T04:00:00.000Z",
                                 "updatedAt": "2024-05-08T06:57:07.109Z",
-                                "policyIds": [
-                                  "66aadac907cf5d784e8798a0"
-                                ],
+                                "policyIds": ["66aadac907cf5d784e8798a0"],
                                 "deleted": false,
                                 "permissions": {
                                   "company-actions": false,
@@ -223,9 +204,7 @@
                                   "ports-read": true,
                                   "user-moderation": false
                                 },
-                                "permissionIds": [
-                                  "66aadbb9b80425a0177b2aae"
-                                ],
+                                "permissionIds": ["66aadbb9b80425a0177b2aae"],
                                 "queryable": true,
                                 "companyIds": [],
                                 "readOnly": false,
@@ -265,14 +244,10 @@
                                 "deletedAt": null,
                                 "displayOrder": 300,
                                 "description": "A Member is associated with your company but may not edit company profile information or view company network information",
-                                "tags": [
-                                  "console"
-                                ],
+                                "tags": ["console"],
                                 "createdAt": "2015-09-03T06:48:40.377Z",
                                 "updatedAt": "2024-04-02T07:11:45.902Z",
-                                "policyIds": [
-                                  "66aade651799c8f777e26ec9"
-                                ],
+                                "policyIds": ["66aade651799c8f777e26ec9"],
                                 "deleted": false,
                                 "permissions": {
                                   "company-actions": false,
@@ -303,9 +278,7 @@
                                           "Action": [
                                             "feature:EnableZScalerOrder"
                                           ],
-                                          "Resource": [
-                                            "*"
-                                          ],
+                                          "Resource": ["*"],
                                           "Effect": "Allow",
                                           "Sid": "enable-zscaler-order"
                                         }
@@ -460,9 +433,7 @@
                       "canInviteExternal": false,
                       "optIntoMarketingEmail": false,
                       "groups": [],
-                      "following": [
-                        "5a0xxxxxxxxxxxxxxxxxxxxx"
-                      ],
+                      "following": ["5a0xxxxxxxxxxxxxxxxxxxxx"],
                       "phone": null,
                       "needsEmailVerification": false,
                       "newEmail": null,
@@ -506,16 +477,12 @@
                               "network": {
                                 "mode": "PRIVATE",
                                 "blackListIds": [],
-                                "whiteListIds": [
-                                  "66aad8c7caac3ecbecbd8790"
-                                ]
+                                "whiteListIds": ["66aad8c7caac3ecbecbd8790"]
                               },
                               "community": {
                                 "mode": "PRIVATE",
                                 "blackListIds": [],
-                                "whiteListIds": [
-                                  "66aad8de1c740284bf0b2148"
-                                ]
+                                "whiteListIds": ["66aad8de1c740284bf0b2148"]
                               }
                             },
                             "industry": null,
@@ -532,9 +499,7 @@
                             "zip": null,
                             "phone": null,
                             "fax": null,
-                            "emailDomains": [
-                              "email.com"
-                            ],
+                            "emailDomains": ["email.com"],
                             "website": "email.com",
                             "businessType": "Internal",
                             "registeredName": "Some Registered Name",
@@ -589,9 +554,7 @@
                           "deletedAt": null,
                           "deleted": false,
                           "verified": true,
-                          "tags": [
-                            "Analytics"
-                          ],
+                          "tags": ["Analytics"],
                           "status": "ACTIVE",
                           "displayOrder": 0,
                           "groups": [],
@@ -608,10 +571,7 @@
                           "portsPending": 0,
                           "portsActive": 4,
                           "portsDisabled": 0,
-                          "categories": [
-                            "NaaS",
-                            "Enterprise"
-                          ],
+                          "categories": ["NaaS", "Enterprise"],
                           "isCloudProvider": false,
                           "signedCompanyRefId": 12,
                           "signedCompanyVerified": true,
@@ -642,10 +602,7 @@
                           "deletedAt": null,
                           "createdAt": "2024-07-12T08:27:08.033Z",
                           "updatedAt": "2024-07-12T08:40:48.135Z",
-                          "roles": [
-                            "NETWORKCONTROL",
-                            "USER"
-                          ],
+                          "roles": ["NETWORKCONTROL", "USER"],
                           "permissions": {
                             "roles": [
                               {
@@ -661,15 +618,10 @@
                                 "deletedAt": null,
                                 "displayOrder": -299,
                                 "description": "A Network Admin may create, edit, remove, and otherwise manage all of your company's ports, connections and virtual routers",
-                                "tags": [
-                                  "networkadmin",
-                                  "console"
-                                ],
+                                "tags": ["networkadmin", "console"],
                                 "createdAt": "2015-09-30T04:00:00.000Z",
                                 "updatedAt": "2024-05-08T06:57:07.109Z",
-                                "policyIds": [
-                                  "66aadac907cf5d784e8798a0"
-                                ],
+                                "policyIds": ["66aadac907cf5d784e8798a0"],
                                 "deleted": false,
                                 "permissions": {
                                   "company-actions": false,
@@ -686,9 +638,7 @@
                                   "ports-read": true,
                                   "user-moderation": false
                                 },
-                                "permissionIds": [
-                                  "66aadbb9b80425a0177b2aae"
-                                ],
+                                "permissionIds": ["66aadbb9b80425a0177b2aae"],
                                 "queryable": true,
                                 "companyIds": [],
                                 "readOnly": false,
@@ -728,14 +678,10 @@
                                 "deletedAt": null,
                                 "displayOrder": 300,
                                 "description": "A Member is associated with your company but may not edit company profile information or view company network information",
-                                "tags": [
-                                  "console"
-                                ],
+                                "tags": ["console"],
                                 "createdAt": "2015-09-03T06:48:40.377Z",
                                 "updatedAt": "2024-04-02T07:11:45.902Z",
-                                "policyIds": [
-                                  "66aade651799c8f777e26ec9"
-                                ],
+                                "policyIds": ["66aade651799c8f777e26ec9"],
                                 "deleted": false,
                                 "permissions": {
                                   "company-actions": false,
@@ -766,9 +712,7 @@
                                           "Action": [
                                             "feature:EnableZScalerOrder"
                                           ],
-                                          "Resource": [
-                                            "*"
-                                          ],
+                                          "Resource": ["*"],
                                           "Effect": "Allow",
                                           "Sid": "enable-zscaler-order"
                                         }
@@ -1003,9 +947,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "description": "Retrieve account details for the authenticated user.",
         "operationId": "GetLoggedInUser",
         "summary": "Get current user"
@@ -1047,9 +989,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Agreements"
-        ],
+        "tags": ["Agreements"],
         "description": "Get the agreements your company has agreed to.",
         "summary": "Get Agreements"
       },
@@ -1095,9 +1035,7 @@
             }
           }
         },
-        "tags": [
-          "Agreements"
-        ],
+        "tags": ["Agreements"],
         "description": "This API is used by the Console Connect Web application to record acceptance of agreements through the UI. API users must sign the Specific Terms for API Use.",
         "summary": "Accept an Agreement"
       }
@@ -1235,10 +1173,7 @@
                         "location": "Mt Example, TX",
                         "username": "fredcit",
                         "social": null,
-                        "tags": [
-                          "#baseball",
-                          "#football"
-                        ],
+                        "tags": ["#baseball", "#football"],
                         "updatedAt": "2015-10-07T22:37:51.732Z",
                         "createdAt": "2015-10-07T22:37:50.543Z",
                         "companies": [
@@ -1251,9 +1186,7 @@
                             "summary": null,
                             "location": null,
                             "username": "exco",
-                            "followers": [
-                              "56159ebe6c11fef4510bfdc7"
-                            ],
+                            "followers": ["56159ebe6c11fef4510bfdc7"],
                             "following": null,
                             "tags": [],
                             "verified": true,
@@ -1288,9 +1221,7 @@
                             "userId": "56159ebe6c11fef4510bfdc7",
                             "companyId": "56159ebf6c11fef4510bfdcc",
                             "state": "ACTIVE",
-                            "roles": [
-                              "ADMIN"
-                            ],
+                            "roles": ["ADMIN"],
                             "updatedAt": "2015-10-07T22:37:51.225Z",
                             "createdAt": "2015-10-07T22:37:51.225Z",
                             "deleted": false,
@@ -1335,9 +1266,7 @@
             }
           }
         },
-        "tags": [
-          "Search"
-        ],
+        "tags": ["Search"],
         "description": "> **This endpoint is deprecated. Please use specialized search endpoints outlined in other sections of the documentation.**\n\nAn api for searching multiple entities on our platform. While this particular endpoint is convenient for finding multiple types of entities, we highly recommend using more granular search apis listed in the Users, Companies, and DCF sections.",
         "operationId": "legacy-search",
         "summary": "Search Users, Companies, and DCFs"
@@ -1380,12 +1309,7 @@
                         },
                         "classOfService": {
                           "type": "string",
-                          "enum": [
-                            "GOLD",
-                            "SILVERPLUS",
-                            "SILVER",
-                            "BRONZE"
-                          ],
+                          "enum": ["GOLD", "SILVERPLUS", "SILVER", "BRONZE"],
                           "description": "The class of service."
                         },
                         "duration": {
@@ -1643,9 +1567,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "",
         "operationId": "calculate-price-for-ports-and-connections",
         "summary": "Ports and Connections."
@@ -1686,10 +1608,7 @@
                     "description": "Any discount code you may have been provided."
                   }
                 },
-                "required": [
-                  "connectionId",
-                  "flexBandwidth"
-                ]
+                "required": ["connectionId", "flexBandwidth"]
               },
               "examples": {
                 "Without-Discount": {
@@ -1777,9 +1696,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Retrieve flex pricing for a connection.",
         "operationId": "connection-flex-price-calculate",
         "summary": "Connections - Flex pricing"
@@ -2055,9 +1972,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Get Internet On-Demand pricing by company and port.",
         "operationId": "iod-pricing-by-company-and-port",
         "summary": "Internet On-Demand - Company and Port"
@@ -2315,9 +2230,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "An error will be returned if there was no pricing found for a service with the desired bandwidth. Please contact your BDM or Support if this happens.",
         "operationId": "iod-pricing-by-DCF",
         "summary": "Internet on Demand - DCF"
@@ -2480,9 +2393,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Get Internet On-Demand prices for multiple DCFs in a single call.",
         "operationId": "iod-pricing-by-DCF-bulk",
         "summary": "Internet On-Demand - DCF (bulk)"
@@ -2584,9 +2495,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Retrieve flex pricing for Internet On-Demand services.",
         "operationId": "iod-flex-pricing",
         "summary": "Internet On-Demand - Flex"
@@ -2628,12 +2537,7 @@
                     "description": ""
                   }
                 },
-                "required": [
-                  "companyId",
-                  "bandwidth",
-                  "duration",
-                  "sites"
-                ]
+                "required": ["companyId", "bandwidth", "duration", "sites"]
               }
             }
           }
@@ -2869,9 +2773,7 @@
                         "discountType": "percentage",
                         "marketingCode": "L3VPNDISCOUNT",
                         "duration": "recurring",
-                        "applicableProducts": [
-                          "L3VPN"
-                        ],
+                        "applicableProducts": ["L3VPN"],
                         "redemptions": 10,
                         "value": 10,
                         "tierType": "none",
@@ -3086,9 +2988,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Find pricing for CloudRouters",
         "operationId": "cloudrouter-pricing",
         "summary": "CloudRouter"
@@ -3395,9 +3295,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Find pricing for adding a site to a CloudRouter.",
         "operationId": "cloudrouter-pricing-add-site",
         "summary": "CloudRouter - Add site"
@@ -3703,9 +3601,7 @@
             }
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Find pricing for deleting a CloudRouter site.",
         "operationId": "cloudrouter-pricing-delete-site",
         "summary": "CloudRouter - Delete site"
@@ -3758,9 +3654,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Metros"
-        ],
+        "tags": ["Metros"],
         "description": "This endpoint is used to list the Metros a given Company is present at, usually with Ports.",
         "operationId": "metro-count-for-company",
         "summary": "List Metro Count for a Company"
@@ -3799,9 +3693,7 @@
                           "id": "d466b388d3e9ee0a92177910",
                           "name": "Brisbane",
                           "ready": true,
-                          "regionIds": [
-                            "236107000000000000000001"
-                          ],
+                          "regionIds": ["236107000000000000000001"],
                           "createdAt": "2016-02-12T09:01:00.000Z",
                           "updatedAt": "2016-02-12T09:01:00.000Z",
                           "firstDataCenterFacilityId": "5af90d4548ba7200120a194b"
@@ -3816,9 +3708,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Metros"
-        ],
+        "tags": ["Metros"],
         "description": "Returns a list of Metros a given Company has a presence at. This is typically in the form of Port.",
         "operationId": "get-company-metros",
         "summary": "List Metros for a Company"
@@ -3855,9 +3745,7 @@
                         "ready": true,
                         "country": "AU",
                         "rir": "APNIC",
-                        "regionIds": [
-                          "5b7f5dd15acc27000a7acdf9"
-                        ],
+                        "regionIds": ["5b7f5dd15acc27000a7acdf9"],
                         "updatedAt": "2020-08-18T04:08:43.554Z",
                         "createdAt": "2017-12-18T00:45:44.120Z",
                         "deleted": false,
@@ -3893,9 +3781,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Metros"
-        ],
+        "tags": ["Metros"],
         "description": "Returns the basic information for a Metro.",
         "operationId": "get-metro",
         "summary": "Get Metro by ID"
@@ -3904,9 +3790,7 @@
     "/v2/data-center-facility/locations": {
       "get": {
         "summary": "Get DCF locations",
-        "tags": [
-          "Data Center Facilities (DCFs)"
-        ],
+        "tags": ["Data Center Facilities (DCFs)"],
         "description": "Before diving directly into finding DCFs, it is helpful to know which locations are available to order Ports from. This endpoint returns a list of country and city pairs that can be used in search.\n\nThe criteria of the list is based on the following:\n* A DCF is ready for ordering Ports from: `dataCenterFacility.ready`",
         "responses": {
           "200": {
@@ -3940,9 +3824,7 @@
     "/v2/data-center-facility/cloud-locations": {
       "get": {
         "summary": "Get Cloud DCF locations",
-        "tags": [
-          "Data Center Facilities (DCFs)"
-        ],
+        "tags": ["Data Center Facilities (DCFs)"],
         "description": "This endpoint is much like finding general DCF locations, only it narrows down the criteria even further by returning only the locations that our Cloud partners have available ports in. This endpoint is useful when you want to find DCFs to create a Layer 2 Connection to a Cloud provider (e.g. AWS).",
         "operationId": "getDcfCloudLocations",
         "responses": {
@@ -3977,9 +3859,7 @@
     "/v2/data-center-facility": {
       "get": {
         "summary": "Search DCFs",
-        "tags": [
-          "Data Center Facilities (DCFs)"
-        ],
+        "tags": ["Data Center Facilities (DCFs)"],
         "description": "Search for available DCFs on and off the network.\n\nTo ensure a DCF is ready for physical port orders, ensure the property `dataCenterFacility.ready: true` is set when searching for DCFs. \nTo find a DCF that supports Hybrid NNI Ports, search for `dataCenterFacility.nniReady: true`.\n\nSee the Query Parameters section below for search examples.",
         "parameters": [
           {
@@ -4063,9 +3943,7 @@
     "/v2/data-center-facility/{id}": {
       "get": {
         "summary": "Get DCF by ID",
-        "tags": [
-          "Data Center Facilities (DCFs)"
-        ],
+        "tags": ["Data Center Facilities (DCFs)"],
         "description": "Get a single DCF by its ID.",
         "parameters": [
           {
@@ -4161,9 +4039,7 @@
             }
           }
         },
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "Retrieve user account details.",
         "operationId": "GetUser",
         "summary": "Get User"
@@ -4341,9 +4217,7 @@
             }
           }
         },
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "Update user account details.",
         "operationId": "UpdateUser",
         "summary": "Update user"
@@ -4361,9 +4235,7 @@
         "summary": "Create a company",
         "operationId": "Create-a-company",
         "description": "",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [],
         "requestBody": {
           "content": {
@@ -4388,9 +4260,7 @@
         "summary": "Remove role from user",
         "operationId": "Remove-role-from-user",
         "description": "Remove a role from a user within a given company.",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [
           {
             "name": "username",
@@ -4435,9 +4305,7 @@
         "summary": "Add role to user",
         "operationId": "Add-role-to-user",
         "description": "Add a role to a user within a given company.",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [
           {
             "name": "username",
@@ -4484,9 +4352,7 @@
         "summary": "Update user role state",
         "operationId": "Update-user-role-state",
         "description": "Company membership requests can be in one of the following states:\n- INACTIVE - Request made by either company or user.\n- ACTIVE - Request accepted and they are a member of the company.\n- DENIED - Request denied by the company.\n- CANCELLED - Request cancelled by either company or user.",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [
           {
             "name": "username",
@@ -4543,9 +4409,7 @@
         "summary": "Remove a user from a company",
         "operationId": "Remove-a-user-from-a-company",
         "description": "",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [
           {
             "name": "username",
@@ -4582,9 +4446,7 @@
         "summary": "Leave a Company",
         "operationId": "Leave-a-Company",
         "description": "Removes the authenticated user from the company.",
-        "tags": [
-          "Companies"
-        ],
+        "tags": ["Companies"],
         "parameters": [
           {
             "name": "username",
@@ -4617,11 +4479,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "speed",
-                  "portName",
-                  "paymentType"
-                ],
+                "required": ["speed", "portName", "paymentType"],
                 "properties": {
                   "paymentType": {
                     "type": "string",
@@ -4723,9 +4581,7 @@
                           "clientId": null,
                           "companySize": null,
                           "dateFounded": null,
-                          "emailDomains": [
-                            "example.org"
-                          ],
+                          "emailDomains": ["example.org"],
                           "fax": null,
                           "first": null,
                           "industry": null,
@@ -4891,9 +4747,7 @@
                           "clientId": null,
                           "companySize": null,
                           "dateFounded": null,
-                          "emailDomains": [
-                            "example.org"
-                          ],
+                          "emailDomains": ["example.org"],
                           "fax": null,
                           "first": null,
                           "industry": null,
@@ -5061,9 +4915,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "A port order is created in a 'dataCenterFacility'.\n\nThe 'paymentType' field is required and needs to be one of 'plan', or 'invoice'. The 'creditcard' payment type is only supported via the Console Connect web application.\n\nWhen paymentType is 'plan' or 'invoice', 'paymentTransactionId' should not be provided. When paymentType is \"creditcard\", paymentTransactionId must be provided.\n\nWhen the port is provisioned, the order will change to \"done\" status and a new port will be created and activated.",
         "operationId": "CreatePortOrder",
         "summary": "Create a port order/reservation"
@@ -5075,10 +4927,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "companyName",
-                  "orderId"
-                ],
+                "required": ["companyName", "orderId"],
                 "example": {
                   "orderId": "56d691309a90128d55831db1",
                   "companyName": "Acme"
@@ -5158,9 +5007,7 @@
                           "clientId": null,
                           "companySize": null,
                           "dateFounded": null,
-                          "emailDomains": [
-                            "example.com"
-                          ],
+                          "emailDomains": ["example.com"],
                           "fax": null,
                           "first": null,
                           "industry": null,
@@ -5301,9 +5148,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Get the details of a companies port order",
         "operationId": "GetPortOrderDetail",
         "summary": "Get order details by ID"
@@ -5382,9 +5227,7 @@
                           "clientId": null,
                           "companySize": null,
                           "dateFounded": null,
-                          "emailDomains": [
-                            "example.org"
-                          ],
+                          "emailDomains": ["example.org"],
                           "fax": null,
                           "first": null,
                           "industry": null,
@@ -5525,9 +5368,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "A Letter of Authorisation is required as part of the process to connect to a [port](https://www.consoleconnect.com/help/access-ports/#ports).\n* **sendloa**: resends the LOA to the user\n* **loasent**: Updates port order status to loa_sent.\n  * **Note**: **loasent** will fail with 409 unless port order status is 'ALLOCATED'.\n",
         "operationId": "UpdatePortOrderAction",
         "summary": "Perform LOA action on a port order"
@@ -5676,9 +5517,7 @@
                               "metroId": "1232413986c08c061dd8c45f",
                               "name": "corp - Skyla",
                               "password": "",
-                              "portIds": [
-                                "5762451a82894b9b1b1a5dc2"
-                              ],
+                              "portIds": ["5762451a82894b9b1b1a5dc2"],
                               "status": "ACTIVE",
                               "type": "USER",
                               "updatedAt": "2016-06-16T06:20:11.462Z",
@@ -5701,10 +5540,7 @@
                                   "country": "USA",
                                   "email": "",
                                   "geo": {
-                                    "coordinates": [
-                                      -121.78322,
-                                      37.24162
-                                    ],
+                                    "coordinates": [-121.78322, 37.24162],
                                     "type": "Point"
                                   },
                                   "phone": "",
@@ -5827,9 +5663,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Note: Reading a company’s ports is publicly visible.\n\nA port can be in one of the following states:\n<table>\n  <thead>\n  <tr>\n  <th>Status</th>\n  <th>Description</th>\n  </tr>\n  </thead>\n  <tbody>\n  <tr>\n  <td>ACTIVATING</td>\n  <td>In the process of being activated</td>\n  </tr>\n  <tr>\n  <td>READY</td>\n  <td>Allocated but awaiting a physical network connection</td>\n  </tr>\n  <tr>\n  <td>ACTIVE</td>\n  <td>Port is active</td>\n  </tr>\n  <tr>\n  <td>DISABLING</td>\n  <td>In the process of being disabled</td>\n  </tr>\n  <tr>\n  <td>DISABLED</td>\n  <td>The port is disabled</td>\n  </tr>\n  <tr>\n  <td>DELETING</td>\n  <td>In the process of being deleted</td>\n  </tr>\n  <tr>\n  <td>DELETED</td>\n  <td>The Port is deleted</td>\n  </tr>\n  <tr>\n  <td>UNKNOWN</td>\n  <td>The status of the port cannot be determined</td>\n  </tr>\n  <tr>\n  <td>ONBOARDING</td>\n  <td>The port is currently being on-boarded</td>\n  </tr>\n  </tbody>\n</table>\n\nIn addition to these states, a port also has the `singleService` flag which indicates that the port is dedicated to a single untagged connection, so no further connections can be created on the port.\n",
         "operationId": "GetPortList",
         "summary": "List ports"
@@ -5865,9 +5699,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Note: a port must be disabled using Port Actions before it can be deleted.",
         "operationId": "DeletePort",
         "summary": "Delete port"
@@ -6022,9 +5854,7 @@
                           "metroId": "1232413986c08c061dd8c45f",
                           "name": "corp - Skyla",
                           "password": "",
-                          "portIds": [
-                            "5762451a82894b9b1b1a5dc2"
-                          ],
+                          "portIds": ["5762451a82894b9b1b1a5dc2"],
                           "status": "ACTIVE",
                           "type": "USER",
                           "updatedAt": "2016-06-16T06:20:11.462Z",
@@ -6047,10 +5877,7 @@
                               "country": "USA",
                               "email": "",
                               "geo": {
-                                "coordinates": [
-                                  -121.78322,
-                                  37.24162
-                                ],
+                                "coordinates": [-121.78322, 37.24162],
                                 "type": "Point"
                               },
                               "phone": "",
@@ -6175,9 +6002,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Note: Reading a company's port details is publicly visible.",
         "operationId": "GetPort",
         "summary": "Read port details"
@@ -6209,10 +6034,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "asn",
-                  "name"
-                ],
+                "required": ["asn", "name"],
                 "example": {
                   "asn": {
                     "asn": "176252"
@@ -6360,9 +6182,7 @@
                           "metroId": "1232413986c08c061dd8c45f",
                           "name": "corp - Skyla",
                           "password": "",
-                          "portIds": [
-                            "5762451a82894b9b1b1a5dc2"
-                          ],
+                          "portIds": ["5762451a82894b9b1b1a5dc2"],
                           "status": "ACTIVE",
                           "type": "USER",
                           "updatedAt": "2016-06-16T06:20:11.462Z",
@@ -6385,10 +6205,7 @@
                               "country": "USA",
                               "email": "",
                               "geo": {
-                                "coordinates": [
-                                  -121.78322,
-                                  37.24162
-                                ],
+                                "coordinates": [-121.78322, 37.24162],
                                 "type": "Point"
                               },
                               "phone": "",
@@ -6513,9 +6330,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Update a port",
         "operationId": "UpdatePortDetails",
         "summary": "Update port details"
@@ -6583,14 +6398,7 @@
                 "schema": {
                   "properties": {
                     "crossConnectConnectorType": {
-                      "enum": [
-                        "SC",
-                        "FC",
-                        "LC",
-                        "BNC",
-                        "RJ48",
-                        "RJ45"
-                      ],
+                      "enum": ["SC", "FC", "LC", "BNC", "RJ48", "RJ45"],
                       "type": "string"
                     },
                     "crossConnectId": {
@@ -6600,12 +6408,7 @@
                       "type": "boolean"
                     },
                     "crossConnectMediaType": {
-                      "enum": [
-                        "SMF",
-                        "MMF",
-                        "COAXIAL",
-                        "COPPER"
-                      ],
+                      "enum": ["SMF", "MMF", "COAXIAL", "COPPER"],
                       "type": "string"
                     },
                     "crossConnectProvider": {
@@ -6729,9 +6532,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "",
         "operationId": "GetPortCircuitDetails",
         "summary": "Read port access circuit details"
@@ -6898,9 +6699,7 @@
                           "metroId": "1232413986c08c061dd8c45f",
                           "name": "corp - Skyla",
                           "password": "",
-                          "portIds": [
-                            "5762451a82894b9b1b1a5dc2"
-                          ],
+                          "portIds": ["5762451a82894b9b1b1a5dc2"],
                           "status": "ACTIVE",
                           "type": "USER",
                           "updatedAt": "2016-06-16T06:20:11.462Z",
@@ -6923,10 +6722,7 @@
                               "country": "USA",
                               "email": "",
                               "geo": {
-                                "coordinates": [
-                                  -121.78322,
-                                  37.24162
-                                ],
+                                "coordinates": [-121.78322, 37.24162],
                                 "type": "Point"
                               },
                               "phone": "",
@@ -7051,9 +6847,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "",
         "operationId": "UpdatePortAction",
         "summary": "Perform a action on a port"
@@ -7142,9 +6936,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Obtain utilization information about a specific port using a specific time period and preferred resolution.\n\nUtilization is based on connections attached to a port. Incoming connections (connections initiated by someone else that you accepted) are not included in utilization, but outgoing connections (connections you initiated) are included. You may not create an outgoing connection request that exceeds your port utilization.",
         "operationId": "GetPortUtilization",
         "summary": "Get port utilization data"
@@ -7202,12 +6994,7 @@
                   "response": {
                     "value": {
                       "id": 120391239323,
-                      "available": [
-                        100,
-                        200,
-                        300,
-                        400
-                      ],
+                      "available": [100, 200, 300, 400],
                       "ranges": [
                         {
                           "start": 100
@@ -7226,9 +7013,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Return the vlan information around the given port",
         "operationId": "GetPortVlanInfo",
         "summary": "Get port VLAN info"
@@ -7324,9 +7109,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "DCP Partner | Username\n--:| ----\nAWS | amazon\nAZURE |  azure\nGCE | google_cloud\nTENCENT | tencent-cloud\nALICLOUD | alibaba_cloud",
         "operationId": "GetDCPPortsAndRegions",
         "summary": "Get all ports/regions for DCP"
@@ -7383,9 +7166,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "",
         "operationId": "GetAllDCPAddons",
         "summary": "Get all DCP add-ons"
@@ -7428,9 +7209,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "",
         "operationId": "get-port-connections",
         "summary": "Get all connections for a specified port"
@@ -7468,9 +7247,7 @@
                         "deletedAt": null,
                         "createdAt": "2018-12-05T06:55:53.797Z",
                         "updatedAt": "2018-12-05T06:55:53.797Z",
-                        "itemIds": [
-                          "57e0aba00956ad107191328c"
-                        ]
+                        "itemIds": ["57e0aba00956ad107191328c"]
                       },
                       {
                         "entitlement": {
@@ -7522,9 +7299,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Entitlements"
-        ],
+        "tags": ["Entitlements"],
         "description": "Get all company plans and entitlements",
         "operationId": "GetPlansAndEntitlements",
         "summary": "Get all plans and entitlements"
@@ -7554,9 +7329,7 @@
             }
           }
         ],
-        "tags": [
-          "Entitlements"
-        ],
+        "tags": ["Entitlements"],
         "responses": {
           "200": {
             "description": "OK",
@@ -7670,9 +7443,7 @@
                       "name": "my new connection",
                       "cdrBillingType": "METRO",
                       "payg": true,
-                      "billingType": [
-                        "PAYG"
-                      ],
+                      "billingType": ["PAYG"],
                       "classOfService": "BRONZE"
                     }
                   },
@@ -7700,9 +7471,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "summary": "Create a Layer 2 connection request",
         "operationId": "create-layer2-connection-request",
         "description": "\nCreate a Layer 2 connection request to a specified destination company. Layer 2 connections require a source port ID and requested metro.\n* You may not create an outgoing connection request that exceeds your port utilization or plan entitlement.\n* Both parties must approve a connection before it is activated. When either party makes a billing or capacity change, the other party must approve the connection using the approve endpoint.\n* You can optionally create an untagged connection by specifying `untagged: true`. This will place the port into single service mode, so you must ensure no other connections exist on the port before continuing.\n* You can optionally create a QinQ connection by specifying `qinQ: true`.\n* The 'paymentType' can be either 'invoice' or 'plan'. A 'paymentType' of 'creditcard' is only supported via the Console Connect web application.\n* For pay-as-you-go connections where paymentType is 'creditcard', `paymentTransactionId`, duration and evergreen options must be provided in the request.\n* If paymentType is 'invoice', 'destDcf', 'duration' and 'durationUnit' should be provided."
@@ -7789,9 +7558,7 @@
                       ],
                       "cdrBillingType": "METRO",
                       "payg": true,
-                      "billingType": [
-                        "PAYG"
-                      ],
+                      "billingType": ["PAYG"],
                       "maintenanceMode": false,
                       "srcVlanRequest": 1000,
                       "destVlanRequest": 2000,
@@ -7839,9 +7606,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "read-a-connection",
         "summary": "Read a Layer 2 connection"
@@ -7875,9 +7640,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "delete-a-connection",
         "summary": "Delete a Layer 2 connection"
@@ -7972,9 +7735,7 @@
                       ],
                       "cdrBillingType": "METRO",
                       "payg": true,
-                      "billingType": [
-                        "PAYG"
-                      ],
+                      "billingType": ["PAYG"],
                       "maintenanceMode": false,
                       "srcVlanRequest": 1000,
                       "destVlanRequest": 2000,
@@ -8022,9 +7783,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "Update a Layer 2 connection\n\nThis is used for both connection requests and regular connection edits.\n\n#### Connection speed\n\nTo prevent unexpected costs for the other party, you may only _reduce_ the speed\nof a connection to another company (either as a connection request or after it has been activated).\n\nSelf-connections can be updated to a new speed at any time.\n\nThe speed of connection groups may not be updated.",
         "operationId": "update-a-connection",
         "summary": "Update a connection"
@@ -8067,9 +7826,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "When both parties have approved the connection request, the connection will be created. Connections are automatically approved when a party updates the connection request.",
         "operationId": "approve-a-connection-request",
         "summary": "Approve a connection request"
@@ -8112,9 +7869,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "reject-a-connection-request",
         "summary": "Reject a connection request"
@@ -8177,9 +7932,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "Search for connections",
         "operationId": "connection-search",
         "summary": "Connection search"
@@ -8222,9 +7975,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "disable-a-connection",
         "summary": "Disable a connection"
@@ -8267,9 +8018,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "Before a connection can be enabled, the source and destination ports must both be in the 'ACTIVE' state.",
         "operationId": "enable-a-connection",
         "summary": "Enable a connection"
@@ -8315,9 +8064,7 @@
         "summary": "Change request",
         "operationId": "create-or-update-a-change-request",
         "description": "When you need to make a change that affects the other end of the connection, you must make a change request so that both parties can approve the change.\nThe workflow of a change request is as follows:\n1. Company A creates a change request with a speed increase. Company A automatically approves this change. The `connection.request.status` will be set to `PENDING`.\n2. Company B can accept this change as-is and the change will be made. If company B modifies the change request, Company B automatically approves this change and company A's prior approval is removed.\n3. The change request goes back and forth between companies until it is approved by both sides, or rejected outright by one of the parties.\nThe following connection properties are currently supported:\n  \n* 'speed'\n> Note: Speed decreases are allowed at any time. If a change request is made, the destination company can accept the change at a lower speed than the one specified.\n\nYou will need to have your 'companyId' handy.  If you cannot remember your 'companyId', you can make a [request to find it](#tag/Search).\n### Create or update a change request\nCreate a change request. This will send an alert to the other party to approve.\n\nThe change request must be within the bounds of your port speed and Committed Data Rate (CDR). The bandwidth amount will be deducted from your entitlement (including global CDR) as soon as the request is made, reserving it for when the other party accepts the connection.\n\n> Use this endpoint to reduce the speed of an existing change request. If the other company has approved the change and you reduce the speed, the change will be applied automatically.",
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "requestBody": {
           "required": true,
           "content": {
@@ -8384,9 +8131,7 @@
         "summary": "Reject or cancel a change request",
         "operationId": "reject-or-cancel-a-change-request",
         "description": "Reject or cancel a change request.\n\nAfter performing this action, the 'request.status' will be set to either 'WITHDRAWN'\nif this is a change you proposed, or 'REJECTED' if this is a change the other\nparty proposed.\n\nAn alert will be sent to the other party advising them of this change.",
-        "tags": [
-          "Layer 2 Connections"
-        ]
+        "tags": ["Layer 2 Connections"]
       }
     },
     "/api/company/{companyName}/connections/{connectionId}/change/approve": {
@@ -8429,9 +8174,7 @@
         "summary": "Approve the current change request",
         "operationId": "approve-the-current-change-request",
         "description": "Approve a change request. If both parties have approved this change request, the change will be applied automatically.\n\nIf you wish to accept a connection at a different speed, use the [Create or update a change request](#tag/L2-Connections#operation/create-or-update-a-change-request) endpoint.",
-        "tags": [
-          "Layer 2 Connections"
-        ]
+        "tags": ["Layer 2 Connections"]
       }
     },
     "/api/company/{companyName}/connections/{connectionId}/change/read": {
@@ -8471,9 +8214,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "Mark a change request as read. This does not alter the change request, and will not allow the other side to see that you have marked it as read.\nThis is a cosmetic change, and is only used to maintain state on the front-end.",
         "operationId": "mark-the-change-request-as-read",
         "summary": "Mark the change request as read"
@@ -8512,9 +8253,7 @@
         "summary": "Sync connection with upstream provider",
         "operationId": "sync-connection-with-upstream-provider",
         "description": "Sync the connection with the upstream provider. This is implemented for AzureExpressRoute, and will fetch the latest information from the Azure API. Use this when you have changed the connection speed & details in Azure and need to sync them back to Console Connect.",
-        "tags": [
-          "Layer 2 Connections"
-        ]
+        "tags": ["Layer 2 Connections"]
       }
     },
     "/api/company/{companyName}/connections/{connectionId}/log": {
@@ -8554,9 +8293,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "get-connection-history-log-request",
         "summary": "Request connection logs"
@@ -8645,9 +8382,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Layer 2 Connections"
-        ],
+        "tags": ["Layer 2 Connections"],
         "description": "",
         "operationId": "get-connection-utilization-data",
         "summary": "Get connection utilization data"
@@ -8692,10 +8427,7 @@
                   },
                   "paymentType": {
                     "type": "string",
-                    "enum": [
-                      "creditcard",
-                      "invoice"
-                    ],
+                    "enum": ["creditcard", "invoice"],
                     "description": "The payment method."
                   },
                   "partner": {
@@ -8758,9 +8490,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Alibaba Cloud"
-        ],
+        "tags": ["Alibaba Cloud"],
         "operationId": "createAliCloudConnection",
         "summary": "Create a Layer 2 ALICLOUD Direct Connect Partner connection",
         "description": "Prerequisites\n* Your company has been verified on the Console Connect platform.\n* The authenticated user account has Network Admin permissions.\n* The source port is ACTIVE.\n* You are requesting paymentType \"invoice\", or, if requesting paymentType \"plan\", the subscription associated with the port has sufficient entitlements to complete the request."
@@ -8845,9 +8575,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "AWS Direct Connect"
-        ],
+        "tags": ["AWS Direct Connect"],
         "description": "Prerequisites\n\n* Your company has been verified on the Console Connect platform.\n\n* The authenticated user account has Network Admin permissions.\n\n* The source port is ACTIVE.\n\n* You are requesting paymentType \"invoice\", or, if requesting paymentType \"plan\", the subscription associated with the port has sufficient entitlement to complete the request.",
         "operationId": "create-an-AWS-Direct-Connect-Partner-Connection",
         "summary": "Create a Layer 2 AWS Direct Connect Partner connection"
@@ -8865,9 +8593,7 @@
         "summary": "Create Azure Layer 2 connection",
         "operationId": "Create-Azure-connection",
         "description": "After creating a connection request via the Azure dashboard and generating a service key, create the connection by submitting the service key, speed, name and source port.\n\nAzure DirectConnect Partner connections require redundancy - there are always two destination ports.\n\n> Because Azure connections require redundancy, this endpoint creates a\n> 'GROUP_LAYER2' connection that groups two 'LAYER2' subconnections rather \n> than a regular 'LAYER2' connection.",
-        "tags": [
-          "Azure ExpressRoute"
-        ],
+        "tags": ["Azure ExpressRoute"],
         "parameters": [
           {
             "name": "username",
@@ -8938,9 +8664,7 @@
         "summary": "Update an Azure connection's peering config",
         "operationId": "Update-&-create-an-Azure-connection-peering-config",
         "description": "Use this endpoint to update your peering information with the three Azure services:\n\nType      | Description\n----------|---------------------\nPUBLIC    | Azure services available via public IP address. Examples include Azure storage, Azure SQL databases Azure Active Directory and Azure websites.\nPRIVATE   | Private Azure services, not available via public IP address. Examples include Azure virtual machines and cloud services hosted within a virtual network.\nMICROSOFT | Other Microsoft services offered via public IP. Examples include Office 365.\n\n> You can not call this endpoint before the connection has been provisioned (before the connection status is `ACTIVE`)",
-        "tags": [
-          "Azure ExpressRoute"
-        ],
+        "tags": ["Azure ExpressRoute"],
         "parameters": [
           {
             "name": "username",
@@ -8985,9 +8709,7 @@
         "summary": "Read an Azure connection's peering config",
         "operationId": "Read-an-Azure-connection-peering-config",
         "description": "Read an Azure connection's peering config from the system. Note that if you have recently changed this information in the Azure dashboard it may take some time to propagate back to Console Connect.\n\n#### syncStatus\n\nPeering sync status can be one of the following values:\n\nsyncStatus | Description\n-----------|---------------------\nPENDING    | The request has been sent to the system\nSYNCING    | The system is syncing the configuration with Azure\nSYNCED     | The configuration is active in Azure\n\n> Note that 'advertisedPublicPrefixes' and 'routingRegistryName' are only used for configs of type `MICROSOFT`.",
-        "tags": [
-          "Azure ExpressRoute"
-        ],
+        "tags": ["Azure ExpressRoute"],
         "parameters": [
           {
             "name": "username",
@@ -9032,9 +8754,7 @@
         "summary": "Delete an Azure connection's peering config",
         "operationId": "Delete-an-Azure-connection-peering-config",
         "description": "",
-        "tags": [
-          "Azure ExpressRoute"
-        ],
+        "tags": ["Azure ExpressRoute"],
         "parameters": [
           {
             "name": "username",
@@ -9081,9 +8801,7 @@
         "summary": "Verify the key",
         "operationId": "Verify-the-key",
         "description": "You can use this endpoint to verify and retrieve information from the service key before you create the connection.",
-        "tags": [
-          "Azure ExpressRoute"
-        ],
+        "tags": ["Azure ExpressRoute"],
         "parameters": [
           {
             "name": "username",
@@ -9153,10 +8871,7 @@
                   },
                   "paymentType": {
                     "type": "string",
-                    "enum": [
-                      "creditcard",
-                      "invoice"
-                    ],
+                    "enum": ["creditcard", "invoice"],
                     "description": "The payment method."
                   },
                   "duration": {
@@ -9165,12 +8880,7 @@
                   },
                   "durationUnit": {
                     "type": "string",
-                    "enum": [
-                      "d",
-                      "w",
-                      "m",
-                      "y"
-                    ],
+                    "enum": ["d", "w", "m", "y"],
                     "description": "The unit of duration the service was ordered for, in conjunction with duration.  'd' for days, 'w' for weeks, 'm' for months, 'y' for years."
                   },
                   "partnerAccountId": {
@@ -9261,9 +8971,7 @@
             }
           }
         },
-        "tags": [
-          "IBM Cloud Direct Link"
-        ],
+        "tags": ["IBM Cloud Direct Link"],
         "description": "Prerequisites\n\n* Your company has been verified on the Console Connect platform.\n\n* The authenticated user account has Network Admin permissions.\n\n* The source port is ACTIVE and has enough available capacity to support the new connection.\n\n* You are requesting paymentType \"plan\" (invoice not supported yet), and have sufficient entitlements on your plan to support the connection.",
         "operationId": "Create-a-new-IBM-Cloud-Direct-Link",
         "summary": "Create a new IBM Cloud Direct Link"
@@ -9303,9 +9011,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "IBM Cloud Direct Link"
-        ],
+        "tags": ["IBM Cloud Direct Link"],
         "description": "Using this endpoint will \n\n* Delete your connection between the Console Connect plaftorm and IBM Cloud\n\n* Request the deletion of the IBM Direct Link on your behalf\n\nRemember to approve the deletion request in your IBM Cloud Dashboard to avoid extra billing charges.",
         "operationId": "Delete-an-IBM-Cloud-Direct-Link",
         "summary": "Delete an IBM Cloud Direct Link"
@@ -9354,10 +9060,7 @@
                   },
                   "paymentType": {
                     "type": "string",
-                    "enum": [
-                      "creditcard",
-                      "invoice"
-                    ],
+                    "enum": ["creditcard", "invoice"],
                     "description": "The payment method."
                   },
                   "partner": {
@@ -9443,9 +9146,7 @@
                       "fax": null,
                       "phone": null,
                       "addresses": [],
-                      "privacy": [
-                        {}
-                      ],
+                      "privacy": [{}],
                       "zip": null,
                       "state": null,
                       "city": null,
@@ -9463,9 +9164,7 @@
                       "companySize": null,
                       "businessType": null,
                       "industry": null,
-                      "emailDomains": [
-                        {}
-                      ],
+                      "emailDomains": [{}],
                       "website": null
                     },
                     "system": {
@@ -9478,13 +9177,9 @@
                     "status": "ACTIVE",
                     "capabilities": {
                       "layer3Regions": [],
-                      "layer2Regions": [
-                        {}
-                      ],
+                      "layer2Regions": [{}],
                       "layer3Metros": [],
-                      "layer2Metros": [
-                        {}
-                      ],
+                      "layer2Metros": [{}],
                       "layer3": false,
                       "layer2": true
                     },
@@ -9534,9 +9229,7 @@
                       "fax": null,
                       "phone": null,
                       "addresses": [],
-                      "privacy": [
-                        {}
-                      ],
+                      "privacy": [{}],
                       "zip": null,
                       "state": null,
                       "city": null,
@@ -9554,9 +9247,7 @@
                       "companySize": null,
                       "businessType": null,
                       "industry": null,
-                      "emailDomains": [
-                        {}
-                      ],
+                      "emailDomains": [{}],
                       "website": null
                     },
                     "system": {
@@ -9569,13 +9260,9 @@
                     "status": "ACTIVE",
                     "capabilities": {
                       "layer3Regions": [],
-                      "layer2Regions": [
-                        {}
-                      ],
+                      "layer2Regions": [{}],
                       "layer3Metros": [],
-                      "layer2Metros": [
-                        {}
-                      ],
+                      "layer2Metros": [{}],
                       "layer3": false,
                       "layer2": true
                     },
@@ -9663,12 +9350,8 @@
                   "cdrBillingType": "METRO",
                   "parentId": null,
                   "subconnectionIds": {
-                    "primary": [
-                      "5de874f229177602561b2bae"
-                    ],
-                    "secondary": [
-                      "5de874f229177602561b2baf"
-                    ]
+                    "primary": ["5de874f229177602561b2bae"],
+                    "secondary": ["5de874f229177602561b2baf"]
                   },
                   "importedAt": null,
                   "importer": null,
@@ -9700,51 +9383,35 @@
                       "destControllerId": null,
                       "srcCompanyId": "5de874ef9c84f90256ba370f",
                       "destCompanyId": "5de874e89c84f90256ba370d",
-                      "srcCompany": [
-                        {}
-                      ],
-                      "destCompany": [
-                        {}
-                      ],
+                      "srcCompany": [{}],
+                      "destCompany": [{}],
                       "srcRegionId": null,
                       "destRegionId": null,
                       "name": "Google Connection -  Sub 0",
-                      "request": [
-                        {}
-                      ],
+                      "request": [{}],
                       "status": "ACTIVE",
                       "paymentType": "plan",
                       "type": "LAYER2",
-                      "partner": [
-                        {}
-                      ],
+                      "partner": [{}],
                       "durationUnit": null,
                       "duration": null,
                       "tag": null,
                       "destTag": null,
-                      "srcVlan": [
-                        {}
-                      ],
-                      "destVlan": [
-                        {}
-                      ],
+                      "srcVlan": [{}],
+                      "destVlan": [{}],
                       "srcUntagged": false,
                       "destUntagged": false,
                       "srcQinQ": false,
                       "destQinQ": false,
                       "srcConfigTag": null,
                       "destConfigTag": null,
-                      "speed": [
-                        {}
-                      ],
+                      "speed": [{}],
                       "errorReason": null,
                       "cdrBillingType": "METRO",
                       "alertUtilizationThresholdUserIds": null,
                       "alertUtilization": null,
                       "parentId": "5de874f229177602561b2bb0",
-                      "subconnectionIds": [
-                        {}
-                      ],
+                      "subconnectionIds": [{}],
                       "importedAt": null,
                       "importer": null,
                       "statusChangedAt": "2019-12-05T03:09:38.866Z",
@@ -9768,17 +9435,11 @@
                       "isReceiver": false,
                       "isCreator": true,
                       "subconnections": [],
-                      "destPort": [
-                        {}
-                      ],
+                      "destPort": [{}],
                       "srcTag": null,
-                      "destPorts": [
-                        {}
-                      ],
+                      "destPorts": [{}],
                       "srcPorts": [],
-                      "port": [
-                        {}
-                      ]
+                      "port": [{}]
                     },
                     {
                       "id": "5de874f229177602561b2baf",
@@ -9789,51 +9450,35 @@
                       "destControllerId": null,
                       "srcCompanyId": "5de874ef9c84f90256ba370f",
                       "destCompanyId": "5de874e89c84f90256ba370d",
-                      "srcCompany": [
-                        {}
-                      ],
-                      "destCompany": [
-                        {}
-                      ],
+                      "srcCompany": [{}],
+                      "destCompany": [{}],
                       "srcRegionId": null,
                       "destRegionId": null,
                       "name": "Google Connection -  Sub 1",
-                      "request": [
-                        {}
-                      ],
+                      "request": [{}],
                       "status": "ACTIVE",
                       "paymentType": "plan",
                       "type": "LAYER2",
-                      "partner": [
-                        {}
-                      ],
+                      "partner": [{}],
                       "durationUnit": null,
                       "duration": null,
                       "tag": null,
                       "destTag": null,
-                      "srcVlan": [
-                        {}
-                      ],
-                      "destVlan": [
-                        {}
-                      ],
+                      "srcVlan": [{}],
+                      "destVlan": [{}],
                       "srcUntagged": false,
                       "destUntagged": false,
                       "srcQinQ": false,
                       "destQinQ": false,
                       "srcConfigTag": null,
                       "destConfigTag": null,
-                      "speed": [
-                        {}
-                      ],
+                      "speed": [{}],
                       "errorReason": null,
                       "cdrBillingType": "METRO",
                       "alertUtilizationThresholdUserIds": null,
                       "alertUtilization": null,
                       "parentId": "5de874f229177602561b2bb0",
-                      "subconnectionIds": [
-                        {}
-                      ],
+                      "subconnectionIds": [{}],
                       "importedAt": null,
                       "importer": null,
                       "statusChangedAt": "2019-12-05T03:09:38.867Z",
@@ -9857,17 +9502,11 @@
                       "isReceiver": false,
                       "isCreator": true,
                       "subconnections": [],
-                      "destPort": [
-                        {}
-                      ],
+                      "destPort": [{}],
                       "srcTag": null,
-                      "destPorts": [
-                        {}
-                      ],
+                      "destPorts": [{}],
                       "srcPorts": [],
-                      "port": [
-                        {}
-                      ]
+                      "port": [{}]
                     }
                   ],
                   "destPort": {
@@ -9889,12 +9528,8 @@
                     "mediaType": "SMF",
                     "partner": {
                       "type": "GCE",
-                      "regionNames": [
-                        {}
-                      ],
-                      "connectionSpeeds": [
-                        {}
-                      ],
+                      "regionNames": [{}],
+                      "connectionSpeeds": [{}],
                       "partnerPort": "port"
                     },
                     "ip": {
@@ -9958,15 +9593,9 @@
                       "linkStateSyncedAt": null,
                       "type": "DCP",
                       "mediaType": "SMF",
-                      "partner": [
-                        {}
-                      ],
-                      "ip": [
-                        {}
-                      ],
-                      "capabilities": [
-                        {}
-                      ],
+                      "partner": [{}],
+                      "ip": [{}],
+                      "capabilities": [{}],
                       "activeChangedAt": null,
                       "firstActiveAt": null,
                       "updatedAt": "2019-12-05T03:09:34.409Z",
@@ -9991,9 +9620,7 @@
                       "iciLink": "A",
                       "supportedServices": [],
                       "cosTransparency": null,
-                      "cosMapping": [
-                        {}
-                      ],
+                      "cosMapping": [{}],
                       "id": "5de874ee0d83430256e31f88",
                       "accessCircuit": null,
                       "companyId": "5de874e89c84f90256ba370d"
@@ -10015,15 +9642,9 @@
                       "linkStateSyncedAt": null,
                       "type": "DCP",
                       "mediaType": "SMF",
-                      "partner": [
-                        {}
-                      ],
-                      "ip": [
-                        {}
-                      ],
-                      "capabilities": [
-                        {}
-                      ],
+                      "partner": [{}],
+                      "ip": [{}],
+                      "capabilities": [{}],
                       "activeChangedAt": null,
                       "firstActiveAt": null,
                       "updatedAt": "2019-12-05T03:09:34.952Z",
@@ -10048,9 +9669,7 @@
                       "iciLink": "A",
                       "supportedServices": [],
                       "cosTransparency": null,
-                      "cosMapping": [
-                        {}
-                      ],
+                      "cosMapping": [{}],
                       "id": "5de874ee0d83430256e31f89",
                       "accessCircuit": null,
                       "companyId": "5de874e89c84f90256ba370d"
@@ -10127,9 +9746,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Google Cloud Engine"
-        ],
+        "tags": ["Google Cloud Engine"],
         "description": "Prerequisites\n\n* Your company has been verified on the Console Connect platform.\n\n* The authenticated user account has Network Admin permissions.\n\n* The source port is ACTIVE.\n\n* You are requesting paymentType \"invoice\", or, if requesting paymentType \"plan\", the subscription associated with the port has sufficient entitlements to complete the request.\n\nNote: Google Direct Connect Partner connections require redundancy - you must specify two destination ports when creating the connection. You must also specify the region name and two pairing keys from that region.",
         "operationId": "create-gce-connection-request",
         "summary": "Create a new L2 Google Compute Engine Direct Connect Partner connection"
@@ -10190,17 +9807,11 @@
                         "description": "The unit of duration the service, 'm' for months, 'y' for years",
                         "example": "m or y"
                       }
-                    }
+                    },
+                    "required": ["quantity", "unit"]
                   }
                 },
-                "required": [
-                  "name",
-                  "paymentMethod",
-                  "bandwidth",
-                  "duration",
-                  "quantity",
-                  "unit"
-                ]
+                "required": ["name", "paymentMethod", "bandwidth", "duration"]
               }
             }
           }
@@ -10233,9 +9844,7 @@
         },
         "summary": "Provision a new CloudRouter",
         "operationId": "Provision-a-new-CloudRouter",
-        "tags": [
-          "CloudRouter"
-        ]
+        "tags": ["CloudRouter"]
       },
       "get": {
         "parameters": [
@@ -10384,17 +9993,13 @@
         "summary": "Query existing CloudRouters",
         "operationId": "Query-existing-CloudRouters",
         "description": "",
-        "tags": [
-          "CloudRouter"
-        ]
+        "tags": ["CloudRouter"]
       }
     },
     "/v2/companies": {
       "get": {
         "summary": "Find Valid Cloud Providers",
-        "tags": [
-          "CloudRouter"
-        ],
+        "tags": ["CloudRouter"],
         "description": "Get the list of cloud providers.",
         "parameters": [
           {
@@ -10421,9 +10026,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "ALICLOUD",
@@ -10489,10 +10092,7 @@
                           "brandId": null
                         },
                         "verified": true,
-                        "tags": [
-                          "Cloud service providers",
-                          "promoted"
-                        ],
+                        "tags": ["Cloud service providers", "promoted"],
                         "location": null,
                         "summary": "Alibaba Cloud develops highly scalable cloud computing and data management services providing organizations with flexible, cost-effective solutions to meet their networking and information needs. As an Alibaba Cloud Express Connect Partner, Console Connect can provide real-time connectivity to the Alibaba Cloud in all global regions. For more information on how to connect to Alibaba Cloud visit: https://www.consoleconnect.com/clouds/alibaba-cloud/",
                         "headline": "Instant Provision to Alibaba Cloud",
@@ -10514,19 +10114,14 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "AWS",
                           "partnerName": "aws",
                           "companyType": "DCP",
                           "asn": {
-                            "range": [
-                              65432,
-                              65432
-                            ]
+                            "range": [65432, 65432]
                           },
                           "bgpAuthority": "PCCWGLOBAL"
                         },
@@ -10576,10 +10171,7 @@
                         },
                         "dataCenterFacility": {},
                         "verified": true,
-                        "tags": [
-                          "Cloud service providers",
-                          "promoted"
-                        ],
+                        "tags": ["Cloud service providers", "promoted"],
                         "location": null,
                         "summary": "Amazon Web Services is the dominant cloud platform, with a global reach and a strong range of Infrastructure-as-a-Service (IaaS) offerings. Whether your organisation has adopted a hybrid or multi-cloud approach, PCCW Global’s SDN-powered Console Connect platform can provide real time access to the AWS cloud from enterprise locations around the world, as well as interconnect your AWS instance with your existing data centres and other clouds.\n\nAs AWS Direct Connect Partner, our customers can access AWS Direct Connect. We have established interconnect monitoring and are authorized to provision capacities greater than 500Mbps.\n\nFor more info, please refer to https://www.consoleconnect.com/clouds",
                         "headline": "Instant Provision to AWS",
@@ -10601,9 +10193,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "AZURE",
@@ -10666,10 +10256,7 @@
                         },
                         "dataCenterFacility": {},
                         "verified": true,
-                        "tags": [
-                          "Cloud service providers",
-                          "promoted"
-                        ],
+                        "tags": ["Cloud service providers", "promoted"],
                         "location": null,
                         "summary": "Microsoft Azure is a leading cloud provider and has a strong offering among organizations already invested in Microsoft software and services, such as those using Windows. Azure has a capable suite of service offerings and works hard to integrate with private data centres in hybrid cloud environments. As an ExpressRoute partner, Console Connect can provide real-time access to the Azure cloud from all enabled data centres around the world. For more information on how to connect to Azure visit: https://www.consoleconnect.com/clouds/microsoft-azure-direct-connect/",
                         "headline": "Instant Provision to Azure",
@@ -10690,10 +10277,7 @@
                         "name": "Gamma Telecom Connections",
                         "type": "COMPANY",
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider",
-                          "UCaaS"
-                        ],
+                        "categories": ["Cloud Service Provider", "UCaaS"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "Gamma",
@@ -10745,9 +10329,7 @@
                         "deletedAt": null,
                         "summary": "Gamma is a leading provider of Unified Communications as a Service (UCaaS) into the UK, Dutch, Spanish and German business markets, supplying communication solutions via our extensive network of trusted channel partners and also directly.\n\nThe combination of network investment, a digital-first approach and in-house development skills has enabled Gamma to develop a comprehensive portfolio of communications services with a significant amount of intellectual property, which has given us a heritage of disrupting the market with innovative and market-leading cloud-based services such as SIP Trunking and Hosted PBX in the UK.",
                         "headline": "Gamma Telecom",
-                        "tags": [
-                          "promoted"
-                        ],
+                        "tags": ["promoted"],
                         "createdAt": "2023-11-09T13:33:07.502Z",
                         "stats": {
                           "members": 1,
@@ -10775,9 +10357,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "GOOGLE",
@@ -10840,9 +10420,7 @@
                           "brandId": null
                         },
                         "verified": true,
-                        "tags": [
-                          "promoted"
-                        ],
+                        "tags": ["promoted"],
                         "location": null,
                         "summary": "Google Cloud is one of the leading Platform-as-a-Service (PaaS) and Infrastructure-as-a-Service (IaaS) providers, with a strong presence in Machine Learning and AI. Through Google Cloud Partner Interconnect, Console Connect can provide real-time access to the Google Cloud Platform (GCP) from enterprise locations around the world, as well as interconnect your Google Cloud instance with your existing data centres by using Cloud Interconnect. For more information on how to connect to Google Cloud visit: https://www.consoleconnect.com/clouds/google-cloud/",
                         "headline": "Instant Provision to Google Cloud",
@@ -10864,9 +10442,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "HUAWEI",
@@ -10932,9 +10508,7 @@
                           "brandId": null
                         },
                         "verified": false,
-                        "tags": [
-                          "promoted"
-                        ],
+                        "tags": ["promoted"],
                         "location": null,
                         "summary": "Huawei Cloud provides reliable, secure, and cost-effective cloud services to empower applications, harness the power of data, and help organisations of all sizes grow in today’s intelligent world. As a Huawei Cloud Direct Connect partner, Console Connect can provide real time access to the Huawei Cloud from enterprise locations around the world, as well as interconnect your Huawei Cloud instance with your existing data centres and other clouds. For more information on how to connect to Huawei Cloud visit https://www.consoleconnect.com/clouds/connect-to-huawei-cloud/",
                         "headline": "Instant Provision to Huawei Cloud",
@@ -10955,9 +10529,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "IBM",
@@ -11024,10 +10596,7 @@
                           "brandId": null
                         },
                         "verified": true,
-                        "tags": [
-                          "Cloud service providers",
-                          "promoted"
-                        ],
+                        "tags": ["Cloud service providers", "promoted"],
                         "location": null,
                         "summary": "IBM Cloud provides solutions that enable higher levels of compliance, security, and management, with proven architecture patterns and methods for rapid delivery for running mission-critical workloads. As an IBM Cloud Direct Link Service Provider, Console Connect can provide real-time access to the IBM Cloud from enterprise locations around the world, as well as interconnect your IBM Cloud instance with your existing data centres and other clouds. For more information on how to connect to IBM Cloud visit: https://www.consoleconnect.com/clouds/ibm-cloud/",
                         "headline": "Instant Provision to IBM Cloud",
@@ -11049,9 +10618,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "ORACLE",
@@ -11124,9 +10691,7 @@
                           "brandId": null
                         },
                         "verified": true,
-                        "tags": [
-                          "promoted"
-                        ],
+                        "tags": ["promoted"],
                         "location": null,
                         "summary": "Oracle Cloud Infrastructure combines the elasticity and utility of public cloud with the granular control, security, and predictability of on-premises infrastructure to deliver high-performance and cost-effective infrastructure services. As an Oracle Cloud Fast Connect Global Partner, Console Connect can provide real-time access to Oracle Cloud infrastructure from any enabled data centre across the world. For more information on how to connect to Oracle Cloud visit: https://www.consoleconnect.com/clouds/connect-to-oracle-cloud/",
                         "headline": "Instant Provision to Oracle Cloud",
@@ -11148,18 +10713,13 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": "644xxxxxxxxxxxxxxxxxxxxx",
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "OVHCLOUD",
                           "companyType": "DCP",
                           "asn": {
-                            "range": [
-                              65432,
-                              65432
-                            ]
+                            "range": [65432, 65432]
                           },
                           "bgpAuthority": "OVHCLOUD"
                         },
@@ -11241,10 +10801,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider",
-                          "CRM"
-                        ],
+                        "categories": ["Cloud Service Provider", "CRM"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "Salesforce",
@@ -11333,9 +10890,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": null,
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "vultr",
@@ -11419,9 +10974,7 @@
                         "type": "COMPANY",
                         "avatar": null,
                         "overviewImage": "",
-                        "categories": [
-                          "Cloud Service Provider"
-                        ],
+                        "categories": ["Cloud Service Provider"],
                         "isCloudProvider": true,
                         "cloudProviderDetails": {
                           "cloudType": "Wasabi",
@@ -11634,9 +11187,7 @@
     "/v2/companies/cloud-providers/{providerId}/ports": {
       "get": {
         "summary": "Find Valid Ports in a Cloud Provider",
-        "tags": [
-          "CloudRouter"
-        ],
+        "tags": ["CloudRouter"],
         "description": "Get the list of valid ports for a specific cloud provider.\n\nNote: If there are no `connectionSpeeds` listed under `partner`, this field will not be required on the create site payload.\n",
         "parameters": [
           {
@@ -13352,9 +12903,7 @@
         "summary": "Deprovision a CloudRouter",
         "operationId": "Deprovision-a-CloudRouter",
         "description": "Prerequisites:\n\n* The authenticated user account has CloudRouter Destroy permissions.\n\n* The CloudRouter does not have any attached sites which have not been deleted.\n\n* The CloudRouter is in the status: CREATED.\n\n* The contract end date must be in the past",
-        "tags": [
-          "CloudRouter"
-        ]
+        "tags": ["CloudRouter"]
       }
     },
     "/app-user/{companyId}/l3vpn/{vpnId}/site": {
@@ -13510,9 +13059,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "CloudRouter"
-        ],
+        "tags": ["CloudRouter"],
         "operationId": "Provision-a-new-L3VPN-Site",
         "summary": "Provision a new Site on an existing VPN (CloudRouter)",
         "description": "### Provision a new VPN site\n\nPrerequisites:\n* Your company has been verified on the Console Connect platform and you have signed the Specific Terms for API use. Contact ***[Support](mailto:support@consoleconnect.com)*** if you are unsure whether this has been completed for your company.\n* Use API key to authenticate Once you apply for an API key the Support team will send you the key that you will require. (See ***[Auth](#tag/Auth/operation/GetLoggedInUser)***)\n* The authenticated user account has L3VPN Update and L3VPN Site Create permissions.\n* Your company already has an L3VPN (CloudRouter) on the Console Connect platform. You can check this in the Web Application or use the Query existing CloudRouters APi endpoint (See ***[Query existing CloudRouters](#tag/CloudRouter/operation/Query-existing-CloudRouters)***)\n* Site Ports:\n  * The port (identified with `portId`) must have enough remaining capacity.\n  * The port needs to be Active.\n* Tier Rate Limit for DCP providers:\n  * Must be one of the speed tiers marked as available on the DCP port.\n  * Must be greater than or equal to the requested rateLimit.\n* My Port Site:\n  * My port sites (`peer.type \"SELF\"`) are sites created on one of your active Console Connect Ports.\n\n\n#### Site Ports\n\nThe port (identified with portId) must have enough remaining capacity.\n\n\n#### Tier Rate Limit for DCP providers\n\n* must be one of the speed tiers marked as available on the DCP port.\n* must be greater than or equal to the requested rateLimit\n\n\n#### My Port Site\n\nMy port sites (**peer.type** \"SELF\") are sites created on one of your active Console Connect Ports."
@@ -13653,9 +13200,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "CloudRouter"
-        ],
+        "tags": ["CloudRouter"],
         "description": "",
         "operationId": "Get-list-of-CloudRouter-Sites",
         "summary": "Get list of CloudRouter sites"
@@ -13709,9 +13254,7 @@
         "summary": "Deprovision a Site of an existing CloudRouter",
         "operationId": "Deprovision-a-Site-of-an-existing-CloudRouter",
         "description": "Prerequisites:\n\n* The authenticated user account has permissions to delete the site of an existing CloudRouter.",
-        "tags": [
-          "CloudRouter"
-        ]
+        "tags": ["CloudRouter"]
       }
     },
     "/app-user/{companyId}/check-ip-availability": {
@@ -13735,10 +13278,7 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "enum": [
-                "ipv4",
-                "ipv6"
-              ]
+              "enum": ["ipv4", "ipv6"]
             }
           },
           {
@@ -13749,10 +13289,7 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "enum": [
-                "customer",
-                "linknet"
-              ]
+              "enum": ["customer", "linknet"]
             }
           },
           {
@@ -13763,13 +13300,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [
-                26,
-                27,
-                28,
-                29,
-                30
-              ]
+              "enum": [26, 27, 28, 29, 30]
             }
           }
         ],
@@ -13791,9 +13322,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "### Prerequisites\n\n* Your company has been verified on the Console Connect platform",
         "operationId": "check-ip-availability",
         "summary": "Check IP Availability"
@@ -13845,9 +13374,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Ports"
-        ],
+        "tags": ["Ports"],
         "description": "Check the capabilities of a Port.\n### Prerequisites:\n* Your company has been verified on the Console Connect platform.\n* You have a port.",
         "operationId": "check-port-capability",
         "summary": "Check Port capabilities"
@@ -13868,9 +13395,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "Get an allocatable Private ASN suggestion.",
         "operationId": "get-private-asn-suggestion",
         "summary": "Get Private ASN Suggestion"
@@ -13892,9 +13417,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "get-private-asn-range",
         "summary": "Get Private ASN Range"
@@ -13915,9 +13438,7 @@
                     "type": "number"
                   }
                 },
-                "required": [
-                  "asn"
-                ]
+                "required": ["asn"]
               }
             }
           }
@@ -13941,9 +13462,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "validate-private-asn",
         "summary": "Validate a Private ASN"
@@ -13990,9 +13509,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "ASNs"
-        ],
+        "tags": ["ASNs"],
         "description": "",
         "operationId": "get-all-my-ASNs",
         "summary": "Get all my ASNs"
@@ -14044,9 +13561,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "ASNs"
-        ],
+        "tags": ["ASNs"],
         "description": "",
         "operationId": "get-a-particular-ASN",
         "summary": "Get a particular ASN"
@@ -14096,9 +13611,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "ASNs"
-        ],
+        "tags": ["ASNs"],
         "description": "Add your ASN to the system. The ASN will be verified by Console Connect Support before you are able to use it.\n\nNote: Private ASNs between 65515 and 65520 may not be created as they are reserved for use in Microsoft ExpressRoute Peering.",
         "operationId": "create-a-new-ASN",
         "summary": "Create a new ASN"
@@ -14140,9 +13653,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "ASNs"
-        ],
+        "tags": ["ASNs"],
         "description": "You may only delete an ASN if it is not in use in any other locations. This endpoint will return a 403 if the ASN is still in use.",
         "operationId": "delete-an-ASN",
         "summary": "Delete an ASN"
@@ -14268,10 +13779,7 @@
                   "paymentType": {
                     "description": "The method used to make payment for this service - invoice or creditcard",
                     "type": "string",
-                    "enum": [
-                      "creditcard",
-                      "invoice"
-                    ]
+                    "enum": ["creditcard", "invoice"]
                   }
                 },
                 "required": [
@@ -14321,9 +13829,7 @@
                   "linknetIpV4Block": "0638779d-2c48-433a-9869-545ded06f576",
                   "linknetIpV6Block": "e6c79137-0b9f-407a-be27-a75e942dbabf",
                   "bgpKey": "af83Le4Y5gGP8IgA9gaJ",
-                  "staticRoutes": [
-                    "101.22.84.60/30"
-                  ],
+                  "staticRoutes": ["101.22.84.60/30"],
                   "salesRecordId": "6d8011d7-59c6-4edd-b1c2-ff1eaf822002",
                   "giaSiteId": "cbaa830a-991b-4e9d-a90d-63d90df99199",
                   "giaOrderId": "65849700-36f6-40b9-b0a6-fbfb6ee5b5a5",
@@ -14349,9 +13855,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "## Prerequisites:\n\n* Your company has been verified on the Console Connect platform.\n* The authenticated user account has IO-D Create permissions.\n* You have specified a port with IO-D capability.\n* You have provided a valid ASN configuration:\n  * Public ASN: To use a Public ASN, pass in `asnId`, the ID of a VERIFIED ASN attached to your company.\n  * Private ASN: Set `privateAsn: true` and either `privateAsnAutoAssign: true` to have the system assign an ASN for you, or `privateAsnRequested` to set your own.",
         "operationId": "provision-iod-service",
         "summary": "Provision IO-D Service"
@@ -14362,9 +13866,7 @@
         "summary": "Get IO-D Services",
         "description": "List your IO-D services.",
         "operationId": "list-io-d-services",
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "parameters": [
           {
             "description": "The ID of the company.",
@@ -14428,9 +13930,7 @@
                     "linknetIpV4Block": "0638779d-2c48-433a-9869-545ded06f576",
                     "linknetIpV6Block": "e6c79137-0b9f-407a-be27-a75e942dbabf",
                     "bgpKey": "af83Le4Y5gGP8IgA9gaJ",
-                    "staticRoutes": [
-                      "101.22.84.60/30"
-                    ],
+                    "staticRoutes": ["101.22.84.60/30"],
                     "salesRecordId": "6d8011d7-59c6-4edd-b1c2-ff1eaf822002",
                     "giaSiteId": "cbaa830a-991b-4e9d-a90d-63d90df99199",
                     "giaOrderId": "65849700-36f6-40b9-b0a6-fbfb6ee5b5a5",
@@ -14530,9 +14030,7 @@
         },
         "summary": "Delete IO-D service",
         "operationId": "delete-iod-service",
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ]
+        "tags": ["Internet On-Demand (IO-D)"]
       }
     },
     "/app-user/{companyId}/gia-services/{giaId}": {
@@ -14589,9 +14087,7 @@
                   "linknetIpV4Block": "0638779d-2c48-433a-9869-545ded06f576",
                   "linknetIpV6Block": "e6c79137-0b9f-407a-be27-a75e942dbabf",
                   "bgpKey": "af83Le4Y5gGP8IgA9gaJ",
-                  "staticRoutes": [
-                    "101.22.84.60/30"
-                  ],
+                  "staticRoutes": ["101.22.84.60/30"],
                   "salesRecordId": "6d8011d7-59c6-4edd-b1c2-ff1eaf822002",
                   "giaSiteId": "cbaa830a-991b-4e9d-a90d-63d90df99199",
                   "giaOrderId": "65849700-36f6-40b9-b0a6-fbfb6ee5b5a5",
@@ -14631,9 +14127,7 @@
             }
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "get-io-d-by-id",
         "summary": "Get IO-D service by ID"
@@ -14681,10 +14175,7 @@
                     "example": 0
                   }
                 },
-                "required": [
-                  "skip",
-                  "limit"
-                ]
+                "required": ["skip", "limit"]
               }
             }
           }
@@ -14726,9 +14217,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "get-io-d-logs",
         "summary": "Get IO-D service logs"
@@ -14782,9 +14271,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "Get the history of flex requests for an IO-D service.",
         "operationId": "get-io-d-flex-requests",
         "summary": "Get Flex Requests for IO-D service"
@@ -14825,9 +14312,7 @@
                     "type": "number"
                   }
                 },
-                "required": [
-                  "bandwidth"
-                ]
+                "required": ["bandwidth"]
               }
             }
           }
@@ -14944,9 +14429,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "flex-io-d",
         "summary": "Flex an IO-D service"
@@ -15012,9 +14495,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "The active flex is any flex that has been processed and is currently active on the service.\nThe latest flex is the most recent flex request (which may still be processing).\nThe active and latest flex be the same record.\nIf there is no active flex, the active property in the response will be null.\nIf there are no flex requests at all, the latest property in the response will be null.",
         "operationId": "get-io-d-flex",
         "summary": "Get current IO-D service flex"
@@ -15082,9 +14563,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Internet On-Demand (IO-D)"
-        ],
+        "tags": ["Internet On-Demand (IO-D)"],
         "description": "",
         "operationId": "get-flex-history",
         "summary": "Get IO-D service flex history"
@@ -15144,9 +14623,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Heartbeat"
-        ],
+        "tags": ["Heartbeat"],
         "description": "Get the current deployed version on the server",
         "operationId": "Heartbeat",
         "summary": "Heartbeat"
@@ -15172,11 +14649,7 @@
                       "properties": {
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "CALCULATED",
-                            "EDITING",
-                            "INVALID"
-                          ],
+                          "enum": ["CALCULATED", "EDITING", "INVALID"],
                           "description": "A status of the port"
                         },
                         "location": {
@@ -15200,11 +14673,7 @@
                           "properties": {
                             "status": {
                               "type": "string",
-                              "enum": [
-                                "CALCULATED",
-                                "EDITING",
-                                "INVALID"
-                              ],
+                              "enum": ["CALCULATED", "EDITING", "INVALID"],
                               "description": "The status of the port."
                             },
                             "location": {
@@ -15236,11 +14705,7 @@
                       "properties": {
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "CALCULATED",
-                            "EDITING",
-                            "INVALID"
-                          ],
+                          "enum": ["CALCULATED", "EDITING", "INVALID"],
                           "description": "The status of the connection."
                         },
                         "bandwidth": {
@@ -15274,11 +14739,7 @@
                         },
                         "classOfService": {
                           "type": "string",
-                          "enum": [
-                            "GOLD",
-                            "SILVER",
-                            "BRONZE"
-                          ],
+                          "enum": ["GOLD", "SILVER", "BRONZE"],
                           "description": "The class of service of the connection."
                         },
                         "srcCode": {
@@ -15331,11 +14792,7 @@
                           "properties": {
                             "status": {
                               "type": "string",
-                              "enum": [
-                                "CALCULATED",
-                                "EDITING",
-                                "INVALID"
-                              ],
+                              "enum": ["CALCULATED", "EDITING", "INVALID"],
                               "description": "The status of the connection."
                             },
                             "bandwidth": {
@@ -15369,11 +14826,7 @@
                             },
                             "classOfService": {
                               "type": "string",
-                              "enum": [
-                                "GOLD",
-                                "SILVER",
-                                "BRONZE"
-                              ],
+                              "enum": ["GOLD", "SILVER", "BRONZE"],
                               "description": "The class of service for the connection."
                             },
                             "srcCode": {
@@ -15435,11 +14888,7 @@
                       "properties": {
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "CALCULATED",
-                            "EDITING",
-                            "INVALID"
-                          ],
+                          "enum": ["CALCULATED", "EDITING", "INVALID"],
                           "description": "The status of the Internet on-Demand service."
                         },
                         "bandwidth": {
@@ -15506,11 +14955,7 @@
                           "properties": {
                             "status": {
                               "type": "string",
-                              "enum": [
-                                "CALCULATED",
-                                "EDITING",
-                                "INVALID"
-                              ],
+                              "enum": ["CALCULATED", "EDITING", "INVALID"],
                               "description": "The status of the Internet on-Demand."
                             },
                             "bandwidth": {
@@ -15585,11 +15030,7 @@
                       "properties": {
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "CALCULATED",
-                            "EDITING",
-                            "INVALID"
-                          ],
+                          "enum": ["CALCULATED", "EDITING", "INVALID"],
                           "description": "The status of the CloudRouter site."
                         },
                         "duration": {
@@ -15664,11 +15105,7 @@
                             "properties": {
                               "selectedClassOfService": {
                                 "type": "string",
-                                "enum": [
-                                  "GOLD",
-                                  "SILVER",
-                                  "BRONZE"
-                                ],
+                                "enum": ["GOLD", "SILVER", "BRONZE"],
                                 "description": "A selected class of service for priced CloudRouter sites.."
                               },
                               "priceRefId": {
@@ -15779,11 +15216,7 @@
                           "properties": {
                             "status": {
                               "type": "string",
-                              "enum": [
-                                "CALCULATED",
-                                "EDITING",
-                                "INVALID"
-                              ],
+                              "enum": ["CALCULATED", "EDITING", "INVALID"],
                               "description": "The status of the CloudRouter site."
                             },
                             "duration": {
@@ -15858,11 +15291,7 @@
                                 "properties": {
                                   "selectedClassOfService": {
                                     "type": "string",
-                                    "enum": [
-                                      "GOLD",
-                                      "SILVER",
-                                      "BRONZE"
-                                    ],
+                                    "enum": ["GOLD", "SILVER", "BRONZE"],
                                     "description": "The selected class of service for priced CloudRouter sites."
                                   },
                                   "priceRefId": {
@@ -16252,9 +15681,7 @@
             "headers": {}
           }
         },
-        "tags": [
-          "Pricing"
-        ],
+        "tags": ["Pricing"],
         "description": "Generate a PDF with pricing information.",
         "operationId": "generate-pdf",
         "summary": "Generate PDF"
@@ -16263,9 +15690,7 @@
     "/api/v2/support-tickets": {
       "get": {
         "summary": "Get support tickets for the logged in users company",
-        "tags": [
-          "Support Tickets"
-        ],
+        "tags": ["Support Tickets"],
         "description": "Get a list of support tickets.",
         "parameters": [
           {
@@ -16276,10 +15701,7 @@
             "example": "open",
             "schema": {
               "type": "string",
-              "enum": [
-                "open",
-                "closed"
-              ]
+              "enum": ["open", "closed"]
             }
           },
           {
@@ -16311,12 +15733,7 @@
                     "id": "INC000001234567",
                     "name": "Ticket Name Label",
                     "description": "This is the description of the ticket",
-                    "priority": [
-                      "Low",
-                      "Medium",
-                      "High",
-                      "Critical"
-                    ],
+                    "priority": ["Low", "Medium", "High", "Critical"],
                     "status": "Acknowledged",
                     "ticketType": "Incident",
                     "creationDate": "2023-01-01T01:02:03.000+0000",
@@ -16386,9 +15803,7 @@
       },
       "post": {
         "summary": "Create support ticket",
-        "tags": [
-          "Support Tickets"
-        ],
+        "tags": ["Support Tickets"],
         "description": "Create a support ticket for the logged in users company.",
         "requestBody": {
           "content": {
@@ -16506,12 +15921,7 @@
                   "id": "INC000001234567",
                   "name": "Ticket Name Label",
                   "description": "This is the description of the ticket",
-                  "priority": [
-                    "Low",
-                    "Medium",
-                    "High",
-                    "Critical"
-                  ],
+                  "priority": ["Low", "Medium", "High", "Critical"],
                   "status": "Acknowledged",
                   "ticketType": "Incident",
                   "creationDate": "2023-01-01T01:02:03.000+0000",
@@ -16596,9 +16006,7 @@
     "/api/v2/support-tickets/{id}": {
       "get": {
         "summary": "Get support ticket by Id",
-        "tags": [
-          "Support Tickets"
-        ],
+        "tags": ["Support Tickets"],
         "description": "Get a single support ticket.",
         "parameters": [
           {
@@ -16621,12 +16029,7 @@
                   "id": "INC000001234567",
                   "name": "Ticket Name Label",
                   "description": "This is the description of the ticket",
-                  "priority": [
-                    "Low",
-                    "Medium",
-                    "High",
-                    "Critical"
-                  ],
+                  "priority": ["Low", "Medium", "High", "Critical"],
                   "status": "Acknowledged",
                   "ticketType": "Incident",
                   "creationDate": "2023-01-01T01:02:03.000+0000",
@@ -16725,9 +16128,7 @@
     "/api/v2/support-tickets/services": {
       "get": {
         "summary": "List Console Services",
-        "tags": [
-          "Support Tickets"
-        ],
+        "tags": ["Support Tickets"],
         "description": "Provides a list of Console Connect services that a support ticket can be created for.",
         "responses": {
           "200": {
@@ -16764,9 +16165,7 @@
     "/api/v2/support-tickets/{id}/addNote": {
       "post": {
         "summary": "Add Note to support ticket",
-        "tags": [
-          "Support Tickets"
-        ],
+        "tags": ["Support Tickets"],
         "description": "Adds a note to an existing support ticket.",
         "parameters": [
           {
@@ -16799,12 +16198,7 @@
                   "id": "INC000001234567",
                   "name": "Ticket Name Label",
                   "description": "This is the description of the ticket",
-                  "priority": [
-                    "Low",
-                    "Medium",
-                    "High",
-                    "Critical"
-                  ],
+                  "priority": ["Low", "Medium", "High", "Critical"],
                   "status": "Acknowledged",
                   "ticketType": "Incident",
                   "creationDate": "2023-01-01T01:02:03.000+0000",
@@ -16976,12 +16370,7 @@
           },
           "unit": {
             "type": "string",
-            "enum": [
-              "d",
-              "w",
-              "m",
-              "y"
-            ],
+            "enum": ["d", "w", "m", "y"],
             "description": "The unit of duration the service was ordered for, in conjunction with duration. 'd' for days, 'w' for weeks, 'm' for months, 'y' for years."
           }
         }
@@ -17173,11 +16562,7 @@
               "name": {
                 "type": "string",
                 "description": "",
-                "enum": [
-                  "BRONZE",
-                  "SILVER",
-                  "GOLD"
-                ]
+                "enum": ["BRONZE", "SILVER", "GOLD"]
               },
               "value": {
                 "type": "number",
@@ -17190,11 +16575,7 @@
             "description": ""
           }
         },
-        "required": [
-          "dcfId",
-          "rateLimit",
-          "classOfService"
-        ]
+        "required": ["dcfId", "rateLimit", "classOfService"]
       },
       "CloudRouterPriceCalcSiteSIMPool": {
         "type": "object",
@@ -17208,9 +16589,7 @@
             "description": "If true, site will be processed as an IoT SIM Pool site"
           }
         },
-        "required": [
-          "simPool"
-        ]
+        "required": ["simPool"]
       },
       "Discount": {
         "type": "object",
@@ -17232,11 +16611,7 @@
             "description": "",
             "items": {
               "type": "string",
-              "enum": [
-                "PORT",
-                "L2",
-                "L3VPN"
-              ]
+              "enum": ["PORT", "L2", "L3VPN"]
             }
           },
           "redemptions": {
@@ -17300,11 +16675,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "enum": [
-                      "BRONZE",
-                      "SILVER",
-                      "GOLD"
-                    ],
+                    "enum": ["BRONZE", "SILVER", "GOLD"],
                     "description": ""
                   },
                   "value": {
@@ -17318,11 +16689,7 @@
                 "description": ""
               }
             },
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService"
-            ]
+            "required": ["portId", "rateLimit", "classOfService"]
           }
         }
       },
@@ -17337,9 +16704,7 @@
                 "description": ""
               }
             },
-            "required": [
-              "simPoolId"
-            ]
+            "required": ["simPoolId"]
           }
         }
       },
@@ -17367,11 +16732,7 @@
           "name": {
             "type": "string",
             "description": "",
-            "enum": [
-              "BRONZE",
-              "SILVER",
-              "GOLD"
-            ]
+            "enum": ["BRONZE", "SILVER", "GOLD"]
           },
           "value": {
             "type": "string",
@@ -17620,9 +16981,7 @@
                 "zip": "44101"
               }
             ],
-            "emailDomains": [
-              "foo.co"
-            ],
+            "emailDomains": ["foo.co"],
             "businessType": "Data Center"
           }
         }
@@ -17661,9 +17020,7 @@
               "clientId": null,
               "companySize": null,
               "dateFounded": null,
-              "emailDomains": [
-                "example.org"
-              ],
+              "emailDomains": ["example.org"],
               "fax": null,
               "first": null,
               "industry": null,
@@ -18370,11 +17727,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": [
-              "LAYER2",
-              "CLOUD",
-              "LAYER2_GROUP"
-            ],
+            "enum": ["LAYER2", "CLOUD", "LAYER2_GROUP"],
             "description": "This should always be 'LAYER2'"
           },
           "name": {
@@ -18402,10 +17755,7 @@
           },
           "paymentType": {
             "type": "string",
-            "enum": [
-              "creditcard",
-              "invoice"
-            ],
+            "enum": ["creditcard", "invoice"],
             "description": "the payment method"
           },
           "partner": {
@@ -18432,9 +17782,7 @@
           "type": {
             "type": "string",
             "description": "The connection type, typically \"LAYER_2\".",
-            "enum": [
-              "LAYER2"
-            ]
+            "enum": ["LAYER2"]
           },
           "name": {
             "type": "string",
@@ -18470,10 +17818,7 @@
           },
           "paymentType": {
             "type": "string",
-            "enum": [
-              "creditcard",
-              "invoice"
-            ],
+            "enum": ["creditcard", "invoice"],
             "description": "The PAYG payment type."
           },
           "duration": {
@@ -18488,12 +17833,7 @@
           },
           "classOfService": {
             "type": "string",
-            "enum": [
-              "GOLD",
-              "SILVERPLUS",
-              "SILVER",
-              "BRONZE"
-            ]
+            "enum": ["GOLD", "SILVERPLUS", "SILVER", "BRONZE"]
           },
           "srcVlanRequest": {
             "type": "number",
@@ -18507,12 +17847,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "name",
-          "portId",
-          "speed"
-        ]
+        "required": ["type", "name", "portId", "speed"]
       },
       "UpdateLayer2ConnectionSchema": {
         "title": "Edit connection.",
@@ -18662,21 +17997,14 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Percentage for the class of service. Must equal 100 across all provided classes."
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -18689,29 +18017,19 @@
                   "unit": {
                     "description": "Unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             },
             "type": "object",
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService"
-            ]
+            "required": ["portId", "rateLimit", "classOfService"]
           },
           "name": {
             "description": "Name for the new VPN site.",
@@ -18722,26 +18040,18 @@
             "properties": {
               "type": {
                 "type": "string",
-                "enum": [
-                  "SELF"
-                ]
+                "enum": ["SELF"]
               }
             },
             "type": "object",
-            "required": [
-              "type"
-            ]
+            "required": ["type"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "ProvisionCloudRouterGoogleSite": {
         "type": "object",
@@ -18786,24 +18096,15 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Only 1 Class is allowed. This value must be 100.",
-                      "enum": [
-                        100
-                      ]
+                      "enum": [100]
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -18816,29 +18117,19 @@
                   "unit": {
                     "description": "unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             },
             "type": "object",
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService"
-            ]
+            "required": ["portId", "rateLimit", "classOfService"]
           },
           "name": {
             "description": "Name for the new VPN site.",
@@ -18859,53 +18150,35 @@
                       "unit": {
                         "description": "Unit of the rateLimit",
                         "type": "string",
-                        "enum": [
-                          "Mbps",
-                          "Gbps"
-                        ]
+                        "enum": ["Mbps", "Gbps"]
                       },
                       "value": {
                         "description": "value of the rateLimit",
                         "type": "number"
                       }
                     },
-                    "required": [
-                      "unit",
-                      "value"
-                    ],
+                    "required": ["unit", "value"],
                     "type": "object"
                   }
                 },
                 "type": "object",
-                "required": [
-                  "pairingKey",
-                  "tierRateLimit"
-                ]
+                "required": ["pairingKey", "tierRateLimit"]
               },
               "type": {
                 "description": "Must be GOOGLE.",
                 "type": "string",
-                "enum": [
-                  "GOOGLE"
-                ]
+                "enum": ["GOOGLE"]
               }
             },
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ]
+            "required": ["type", "data"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "ProvisionCloudRouterAzureSite": {
         "type": "object",
@@ -18952,24 +18225,15 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Only 1 Class is allowed. This value must be 100.",
-                      "enum": [
-                        100
-                      ]
+                      "enum": [100]
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -18986,20 +18250,14 @@
                   "unit": {
                     "description": "Unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             },
@@ -19030,53 +18288,35 @@
                       "unit": {
                         "description": "Unit of the rateLimit",
                         "type": "string",
-                        "enum": [
-                          "Mbps",
-                          "Gbps"
-                        ]
+                        "enum": ["Mbps", "Gbps"]
                       },
                       "value": {
                         "description": "value of the rateLimit",
                         "type": "number"
                       }
                     },
-                    "required": [
-                      "unit",
-                      "value"
-                    ],
+                    "required": ["unit", "value"],
                     "type": "object"
                   }
                 },
                 "type": "object",
-                "required": [
-                  "accountId",
-                  "tierRateLimit"
-                ]
+                "required": ["accountId", "tierRateLimit"]
               },
               "type": {
                 "description": "Must be AZURE.",
                 "type": "string",
-                "enum": [
-                  "AZURE"
-                ]
+                "enum": ["AZURE"]
               }
             },
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ]
+            "required": ["type", "data"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "ProvisionCloudRouterCloudSite": {
         "type": "object",
@@ -19113,11 +18353,7 @@
           "accessCircuit": {
             "description": "L2 config",
             "type": "object",
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService"
-            ],
+            "required": ["portId", "rateLimit", "classOfService"],
             "properties": {
               "classOfService": {
                 "description": "An array with the desired class of service. Only one value is allowed.",
@@ -19128,24 +18364,15 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Only 1 Class is allowed. This value must be 100.",
-                      "enum": [
-                        100
-                      ]
+                      "enum": [100]
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -19158,20 +18385,14 @@
                   "unit": {
                     "description": "Unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             }
@@ -19189,9 +18410,7 @@
               },
               "data": {
                 "type": "object",
-                "required": [
-                  "accountId"
-                ],
+                "required": ["accountId"],
                 "properties": {
                   "accountId": {
                     "description": "Your account or project id with selected cloud provider.",
@@ -19200,18 +18419,12 @@
                   "tierRateLimit": {
                     "type": "object",
                     "description": "For DCP cloud providers. Must be one of the speed tiers marked as available on the DCP port.",
-                    "required": [
-                      "unit",
-                      "value"
-                    ],
+                    "required": ["unit", "value"],
                     "properties": {
                       "unit": {
                         "description": "Unit of the rateLimit",
                         "type": "string",
-                        "enum": [
-                          "Mbps",
-                          "Gbps"
-                        ]
+                        "enum": ["Mbps", "Gbps"]
                       },
                       "value": {
                         "description": "value of the rateLimit",
@@ -19227,21 +18440,14 @@
               }
             },
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ]
+            "required": ["type", "data"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "ProvisionCloudRouterOvhSite": {
         "type": "object",
@@ -19287,24 +18493,15 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Only 1 Class is allowed. This value must be 100.",
-                      "enum": [
-                        100
-                      ]
+                      "enum": [100]
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -19317,30 +18514,19 @@
                   "unit": {
                     "description": "Unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             },
             "type": "object",
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService",
-              "accountId"
-            ]
+            "required": ["portId", "rateLimit", "classOfService", "accountId"]
           },
           "name": {
             "description": "Name for the new VPN site.",
@@ -19365,54 +18551,35 @@
                       "unit": {
                         "description": "Unit of the rateLimit",
                         "type": "string",
-                        "enum": [
-                          "Mbps",
-                          "Gbps"
-                        ]
+                        "enum": ["Mbps", "Gbps"]
                       },
                       "value": {
                         "description": "value of the rateLimit",
                         "type": "number"
                       }
                     },
-                    "required": [
-                      "unit",
-                      "value"
-                    ],
+                    "required": ["unit", "value"],
                     "type": "object"
                   }
                 },
                 "type": "object",
-                "required": [
-                  "accountId",
-                  "tierRateLimit"
-                ]
+                "required": ["accountId", "tierRateLimit"]
               },
               "type": {
                 "description": "Must be OVHCLOUD.",
                 "type": "string",
-                "enum": [
-                  "OVHCLOUD"
-                ]
+                "enum": ["OVHCLOUD"]
               }
             },
             "type": "object",
-            "required": [
-              "asn",
-              "type",
-              "data"
-            ]
+            "required": ["asn", "type", "data"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "ProvisionCloudRouterOracleSite": {
         "type": "object",
@@ -19448,11 +18615,7 @@
           "accessCircuit": {
             "description": "L2 config",
             "type": "object",
-            "required": [
-              "portId",
-              "rateLimit",
-              "classOfService"
-            ],
+            "required": ["portId", "rateLimit", "classOfService"],
             "properties": {
               "classOfService": {
                 "description": "An array with the desired class of service. Only one value is allowed.",
@@ -19463,24 +18626,15 @@
                     "name": {
                       "type": "string",
                       "description": "Name of the class.",
-                      "enum": [
-                        "BRONZE",
-                        "SILVER",
-                        "GOLD"
-                      ]
+                      "enum": ["BRONZE", "SILVER", "GOLD"]
                     },
                     "value": {
                       "type": "number",
                       "description": "Only 1 Class is allowed. This value must be 100.",
-                      "enum": [
-                        100
-                      ]
+                      "enum": [100]
                     }
                   },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
+                  "required": ["name", "value"]
                 }
               },
               "portId": {
@@ -19493,20 +18647,14 @@
                   "unit": {
                     "description": "Unit of the rateLimit",
                     "type": "string",
-                    "enum": [
-                      "Mbps",
-                      "Gbps"
-                    ]
+                    "enum": ["Mbps", "Gbps"]
                   },
                   "value": {
                     "description": "value of the rateLimit",
                     "type": "number"
                   }
                 },
-                "required": [
-                  "unit",
-                  "value"
-                ],
+                "required": ["unit", "value"],
                 "type": "object"
               }
             }
@@ -19520,9 +18668,7 @@
             "properties": {
               "data": {
                 "type": "object",
-                "required": [
-                  "accountId"
-                ],
+                "required": ["accountId"],
                 "properties": {
                   "accountId": {
                     "description": "Your Oracle Cloud Identifier (OCID)",
@@ -19531,18 +18677,12 @@
                   "tierRateLimit": {
                     "type": "object",
                     "description": "For DCP cloud providers. Must be one of the speed tiers marked as available on the DCP port.",
-                    "required": [
-                      "unit",
-                      "value"
-                    ],
+                    "required": ["unit", "value"],
                     "properties": {
                       "unit": {
                         "description": "Unit of the rateLimit",
                         "type": "string",
-                        "enum": [
-                          "Mbps",
-                          "Gbps"
-                        ]
+                        "enum": ["Mbps", "Gbps"]
                       },
                       "value": {
                         "description": "value of the rateLimit",
@@ -19555,27 +18695,18 @@
               "type": {
                 "description": "Must be ORACLE.",
                 "type": "string",
-                "enum": [
-                  "ORACLE"
-                ]
+                "enum": ["ORACLE"]
               }
             },
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ]
+            "required": ["type", "data"]
           },
           "discountCode": {
             "description": "A valid discount code.",
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "accessCircuit",
-          "peer"
-        ]
+        "required": ["name", "accessCircuit", "peer"]
       },
       "SupportTicketNote": {
         "type": "object",
