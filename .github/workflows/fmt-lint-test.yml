@@ -17,7 +17,7 @@ jobs:
       run: yarn install
       shell: bash
     - name: Check the formatting
-      run: yarn run prettier --check
+      run: yarn run prettier --check .
       shell: bash
     - name: Lint the App
       run: yarn lint
