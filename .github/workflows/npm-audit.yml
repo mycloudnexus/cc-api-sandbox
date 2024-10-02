@@ -1,3 +1,5 @@
+name: NPM Audit Scan for Vulnerabilities
+run-name: Running an Audit Scan with NPM
 on:
   push:
 
@@ -12,7 +14,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: "20.x"
 
       - name: Step3 Install Dependencies
         run: npm install
@@ -26,4 +28,3 @@ jobs:
         with:
           name: npm-audit-results
           path: npm-audit-results.json
-
