@@ -37,6 +37,8 @@ export const createApp = async (
     );
   }
 
+  app.use("/", express.static("static"));
+
   const api = new OpenAPIBackend({
     definition: process.env["SPEC_FILE"] ?? "./specs/moddedccapi_20240906.json",
     strict: false,
