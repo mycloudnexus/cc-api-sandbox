@@ -53,6 +53,7 @@
     "lint": "eslint --max-warnings=0 ./src",
     "clean": "tsc --build --clean",
     "fmt": "prettier --write src/.",
+    "fmt-chk": "prettier --check .",
     "postinstall": "husky",
     "test": "jest"
   },

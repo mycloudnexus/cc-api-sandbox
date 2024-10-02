@@ -35,6 +35,8 @@ jobs:
       - name: Install the App
         run: yarn install
         shell: bash
+      - name: Format Check the App
+        run: yarn run fmt-chk
       - name: Lint the App
         run: yarn lint
         shell: bash
