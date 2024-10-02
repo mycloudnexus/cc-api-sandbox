@@ -1,0 +1,29 @@
+on:
+  push:
+
+jobs:
+  npm-audit-scan-job:
+    name: NPM Audit Scan for Vulnerabilities
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Step3 Install Dependencies
+        run: npm install
+
+      - name: NPM Audit Scan and Generate Report in JSON Format
+        run: npm audit --json > npm-audit-results.json
+        continue-on-error: true
+
+      - name: Upload NPM Audit Scan Report to GitHub
+        uses: actions/upload-artifact@v3
+        with:
+          name: npm-audit-results
+          path: npm-audit-results.json
+
