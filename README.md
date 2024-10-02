@@ -22,7 +22,7 @@
 
 cc-api-sandbox is a mock server for the Console Connect API.
 
-*Please, be aware that this repo is under heavy development, and should be expected to change rapidly.*
+_Please, be aware that this repo is under heavy development, and should be expected to change rapidly._
 
 ## Installation
 

@@ -7,24 +7,24 @@ jobs:
     container:
       image: node:20
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'yarn'
-    - name: Install the App
-      run: yarn install
-      shell: bash
-    - name: Check the formatting
-      run: yarn run prettier --check .
-      shell: bash
-    - name: Lint the App
-      run: yarn lint
-      shell: bash
-    - name: Build the App
-      run: yarn build
-      shell: bash
-    - name: Test the App
-      run: yarn test
-      shell: bash
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+      - name: Install the App
+        run: yarn install
+        shell: bash
+      - name: Check the formatting
+        run: yarn run prettier --check .
+        shell: bash
+      - name: Lint the App
+        run: yarn lint
+        shell: bash
+      - name: Build the App
+        run: yarn build
+        shell: bash
+      - name: Test the App
+        run: yarn test
+        shell: bash
