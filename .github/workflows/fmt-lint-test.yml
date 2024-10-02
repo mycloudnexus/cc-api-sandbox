@@ -1,0 +1,56 @@
+name: Check the Program
+run-name: Check the formatting and code
+on: [push]
+jobs:
+  prep:
+    runs-on: ubuntu-24.04
+    container:
+      image: node:20
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install the App
+      run: yarn install
+      shell: bash
+    - uses: actions/upload-artifact@v3
+      with:
+        name: installed-app-${{ github.run_id }}
+        path: ${{ github.workspace }}/**/*
+  format:
+    runs-on: ubuntu-24.04
+    container:
+      image: node:20
+    needs: prep
+    steps:
+    - name: Get Installed App
+      uses: actions/download-artifact@v3
+      with:
+        name: installed-app-${{ github.run_id }}
+    - name: Check the formatting
+      run: yarn run prettier --check
+      shell: bash
+  lint:
+    runs-on: ubuntu-24.04
+    container:
+      image: node:20
+    needs: prep
+    steps:
+    - name: Get Installed App
+      uses: actions/download-artifact@v3
+      with:
+        name: installed-app-${{ github.run_id }}
+    - name: Lint the App
+      run: yarn lint
+      shell: bash
+  test:
+    runs-on: ubuntu-24.04
+    container:
+      image: node:20
+    needs: prep
+    steps:
+    - name: Get Installed App
+      uses: actions/download-artifact@v3
+      with:
+        name: installed-app-${{ github.run_id }}
+    - name: Test the App
+      run: yarn test
+      shell: bash
