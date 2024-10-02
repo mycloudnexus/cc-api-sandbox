@@ -50,9 +50,9 @@
     "start": "node ./dist/src/index.js",
     "dev": "ts-node ./src/index.ts",
     "watch": "nodemon src/index.ts",
-    "lint": "eslint --max-warnings=0 ./src",
+    "lint": "eslint --max-warnings=0 ./src ./eslint.config.mjs ./jest.config.ts",
     "clean": "tsc --build --clean",
-    "fmt": "prettier --write src/.",
+    "fmt": "prettier --write .",
     "fmt-chk": "prettier --check .",
     "postinstall": "husky",
     "test": "jest"
