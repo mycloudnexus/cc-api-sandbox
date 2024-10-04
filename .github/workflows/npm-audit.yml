@@ -1,7 +1,6 @@
 name: NPM Audit Scan for Vulnerabilities
 run-name: Running an Audit Scan with NPM
-on:
-  push:
+on: [push]
 
 jobs:
   npm-audit-scan-job:
@@ -15,12 +14,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20.x"
+          cache: "yarn"
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: NPM Audit Scan and Generate Report in JSON Format
-        run: npm audit --json > npm-audit-results.json
+        run: yarn npm audit --json > npm-audit-results.json
         continue-on-error: true
 
       - name: Upload NPM Audit Scan Report to GitHub
