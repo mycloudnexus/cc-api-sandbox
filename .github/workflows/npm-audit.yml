@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: Step3 Install Dependencies
+      - name: Install Dependencies
         run: npm install
 
       - name: NPM Audit Scan and Generate Report in JSON Format
@@ -24,7 +24,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload NPM Audit Scan Report to GitHub
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: npm-audit-results
           path: npm-audit-results.json
