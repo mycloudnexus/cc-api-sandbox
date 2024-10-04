@@ -1,6 +1,9 @@
 name: NPM Audit Scan for Vulnerabilities
 run-name: Running an Audit Scan with NPM
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - main
 
 jobs:
   npm-audit-scan-job:

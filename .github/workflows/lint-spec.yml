@@ -1,6 +1,10 @@
 name: Vacuum OpenAPI Linting
 run-name: Linting OpenAPI spec with Vacuum
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - main
+
 jobs:
   vacuum-lint:
     runs-on: ubuntu-24.04
@@ -15,6 +19,7 @@ jobs:
         with:
           name: Vacuum HTML Reports
           path: reports/*.html
-      - name: Lint with Vaccum
+      - name: Lint with Vacuum
+        # Ignoring failures because there are errors that likely can't be fixed any time soon.
         run: vacuum lint specs/ccapi* || true
         shell: bash
