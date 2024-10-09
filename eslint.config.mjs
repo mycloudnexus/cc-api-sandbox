@@ -21,6 +21,16 @@ import prettierConfig from "eslint-config-prettier";
 import jestEslint from "eslint-plugin-jest";
 
 export default tseslint.config(
+  {
+    ignores: [
+      ".yarn/",
+      ".yarn/*",
+      ".husky/",
+      ".husky/*",
+      "**/dist/**",
+      "**/node_modules/**",
+    ],
+  },
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {
@@ -29,6 +39,7 @@ export default tseslint.config(
       parser: tseslint.parser,
       parserOptions: {
         project: "tsconfig.eslint.json",
+        //projectService: true,
       },
     },
     plugins: {
@@ -64,14 +75,6 @@ export default tseslint.config(
       ],
     },
   },
-  {
-    files: ["eslint.config.mjs"],
-    rules: {
-      "@typescript-eslint/no-unsafe-argument": "off",
-      "@typescript-eslint/no-unsafe-member-access": "off",
-      "@typescript-eslint/no-unsafe-assignment": "off",
-    },
-  },
   // And specific rules for test code
   {
     files: ["**/*.test.ts"],
@@ -82,9 +85,20 @@ export default tseslint.config(
     },
     rules: {
       "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
       "@typescript-eslint/no-unsafe-return": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
       "jest/no-disabled-tests": "off",
+    },
+  },
+  // Rules specifically for the configuration file
+  {
+    files: ["eslint.config.mjs"],
+    rules: {
+      "@typescript-eslint/no-unsafe-argument": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
     },
   },
   // Disable rules that conflict with prettier
