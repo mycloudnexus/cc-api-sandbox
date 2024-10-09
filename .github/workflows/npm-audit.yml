@@ -1,13 +1,11 @@
 name: NPM Audit Scan for Vulnerabilities
 run-name: Running an Audit Scan with NPM
-on:
-  push:
-    branches-ignore:
-      - main
+on: push
 
 jobs:
   npm-audit-scan-job:
     name: NPM Audit Scan for Vulnerabilities
+    if: github.repository != 'mycloudnexus/cc-api-sandbox'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source

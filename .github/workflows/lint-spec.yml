@@ -1,12 +1,11 @@
 name: Vacuum OpenAPI Linting
 run-name: Linting OpenAPI spec with Vacuum
-on:
-  push:
-    branches-ignore:
-      - main
+on: push
 
 jobs:
   vacuum-lint:
+    name: Vacuum OpenAPI Linting
+    if: github.repository != 'mycloudnexus/cc-api-sandbox'
     runs-on: ubuntu-24.04
     container: dshanley/vacuum:v0.13.1
     steps:
