@@ -1,0 +1,49 @@
+name: NodeJS/NPM Unit Tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: NodeJS/NPM Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: Setup GH CLI
+        uses: actions/setup-gh@main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.09
+          registry-url: "https://registry.npmjs.org"
+          cache: "yarn"
+
+      # Skip post-install scripts here, as a malicious
+      # script could steal NODE_AUTH_TOKEN.
+      - name: Install dependencies
+        run: yarn
+
+      - name: Install the App
+        run: yarn install
+        shell: bash
+      - name: Check the formatting
+        run: yarn run prettier --check .
+        shell: bash
+      - name: Lint the App
+        run: yarn lint
+        shell: bash
+      - name: Build the App
+        run: yarn build
+        shell: bash
+      - name: Test the App
+        run: yarn test
+        shell: bash
