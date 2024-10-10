@@ -1,0 +1,77 @@
+---
+
+name: NodeJS/NPM Release
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  build:
+    name: NodeJS Bump Version and Tag Release
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GIT_REPO_ADMIN_PAT }}
+
+      - name: Setup GH CLI
+        uses: mycloudnexus/cc-api-sandbox-cicd/.github/actions/setup-gh@main
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+
+      - uses: actions/cache@v4
+        id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Bump version in package.json files
+        id: bump-version
+        run: |
+          npm version minor --git-tag-version=false
+          NEW_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | xargs)
+          echo "new-version=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Commit pacakge.json file
+        # env:
+        #   HOME: /tmp
+        run: |
+          git config user.name 'pccwg-syseng-bot'
+          git config user.email 'github-syseng-bot@consolelabs.net'
+          git commit -am "Bump version to v${{ steps.bump-version.outputs.new-version }} [skip ci]"
+          git push
+
+      - name: Create Github release
+        env:
+          # We use a different token here (instead of the default GITHUB_TOKEN)
+          # to make sure triggers another Github Actions Workflow as
+          # actions done using GITHUB_TOKEN do not trigger other Workflows
+          GITHUB_TOKEN: ${{ secrets.GIT_REPO_ADMIN_PAT }}
+        run: |
+          gh release create v${{ steps.bump-version.outputs.new-version }} --generate-notes
+
+      - name: Add comment with release link
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+
+          gh pr comment $PR_NUMBER -b "Created a new release version for this PR - [v${{ steps.bump-version.outputs.new-version }}](${{ github.event.repository.html_url }}/releases/tag/v${{ steps.bump-version.outputs.new-version }})"
+
