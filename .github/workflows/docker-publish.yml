@@ -10,9 +10,8 @@
 name: Publish Docker image
 
 on:
-  push:
-    branches: [ 'main', 'dev*', 'v1*', '1.*', 'add-cd'  ]
-    tags: [ 'v*.*.*', '1.*' ]
+  release:
+    types: [published]
 
 jobs:
   push_to_registry:
