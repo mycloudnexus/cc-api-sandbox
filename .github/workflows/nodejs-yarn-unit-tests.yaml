@@ -21,9 +21,6 @@ jobs:
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
 
-      - name: Setup GH CLI
-        uses: mycloudnexus/github-actions-workflows/.github/actions/setup-gh@main
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -89,4 +86,4 @@ jobs:
           echo "Comment the result to PR ${PR_NUMBER}"
           gh pr comment $PR_NUMBER -F table.txt
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
