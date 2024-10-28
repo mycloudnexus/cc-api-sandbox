@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GIT_REPO_ADMIN_PAT }}
 
       - name: Setup GH CLI
-        uses: mycloudnexus/cc-api-sandbox-cicd/.github/actions/setup-gh@main
+        uses: mycloudnexus/cc-api-sandbox/.github/actions/setup-gh@main
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
