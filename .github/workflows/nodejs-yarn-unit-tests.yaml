@@ -16,6 +16,11 @@ jobs:
   build:
     name: NodeJS/YARN Unit Tests
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      statuses: read
+      checks: read
     steps:
       - uses: actions/checkout@v4
         with:
