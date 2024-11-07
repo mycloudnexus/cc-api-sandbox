@@ -59,7 +59,6 @@ jobs:
           name: npm-audit-results
           path: npm-audit-results.json
 
-
       - uses: anchore/scan-action/download-grype@v4
         id: grype
 
