@@ -71,7 +71,7 @@ jobs:
         run: ${{steps.grype.outputs.cmd}} -v -o json --file output.json --fail-on high --only-fixed dir:.
 
       - name: Output results to markdown table as a comment on the PR 
-        if: (success() || failure()) && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        if: (success() || failure()) && github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name == github.repository)
         run: |
           echo '### Library Vulnerability scan results' > table.txt
           echo -e 'The following vulnerabilities have been found in libraries included in the repository (some might be dependencies of dependencies).\n' >> table.txt
@@ -92,7 +92,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Output results to markdown table as a comment on the PR for folk repo
-        if: (success() || failure()) && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        if: (success() || failure()) && github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository)
         run: |
           echo '### Library Vulnerability scan results' > table.txt
           echo -e 'The following vulnerabilities have been found in libraries included in the repository (some might be dependencies of dependencies).\n' >> table.txt
