@@ -14,12 +14,6 @@
    limitations under the License.
 -->
 
-<!--
-    TODO: Add security e-mail address
-    TODO: Add contact information for general support questions
-    TODO: Formatting?
--->
-
 # Contributing to cc-api-sandbox
 
 ## Welcome!
@@ -46,7 +40,7 @@ As you look to contribute here, please bear in mind our values, the 5 S's, and h
 
 There are a few types of issues you can file here:
 
-- bug: Something doesn't work the way it should? That's probably a bug. Please include a careful, step-by-step guide to reproducing the bug, if possible. If reproducing the bug is hard to do without access to your environment, leave a note to that effect and we'll try to reach out for a private and secure conversation. If you have a security-sensitive ticket that you don't want to file publicly, please email **_insert security email address here_** instead of opening a ticket.
+- bug: Something doesn't work the way it should? That's probably a bug. Please include a careful, step-by-step guide to reproducing the bug, if possible. If reproducing the bug is hard to do without access to your environment, leave a note to that effect and we'll try to reach out for a private and secure conversation. If you have a security-sensitive ticket that you don't want to file publicly, please email [support@consoleconnect.com](mailto:support@consoleconnect.com) instead of opening a ticket.
 
 - enhancement: Also known as Feature Requests, Enhancement tickets are for when you have something in mind that the Console Connect API Sandbox does not do but that you would like it to. Before filling out a feature request, we recommend you check our roadmap for features already planned.  If you don’t see it on there, go ahead and fill in a request.  Depending on your project and timelines, this may also be a great opportunity to try your hand at contributing to this project.
 
@@ -72,7 +66,7 @@ Once you're ready to start, here are the steps to follow:
 
 3. Fill out the pull request template according to the steps in it - we're not ultra strict here, but it helps make our review process smoother.
 
-4. Once you're ready for review, remove the
+4. Once you're ready for review, remove the template instructions and mark your PR as ready for review by removing the draft status if you had it set.
 
 ### What to expect from our code reviews
 
@@ -84,7 +78,7 @@ Testing deserves a special callout. In general, we don't want merge requests to 
 
 ## What if I just have a question?
 
-Great! We'll do our best to answer, you can reach us by **_input link or email address or other method for open source community to use for asking questions_**.
+Great! We'll do our best to answer, you can reach us by opening an issue, or by emailing us at [support@consoleconnect.com](mailto:support@consoleconnect.com).
 
 ## Thanks!
 
