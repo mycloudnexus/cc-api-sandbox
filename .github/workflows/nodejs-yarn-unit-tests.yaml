@@ -62,12 +62,6 @@ jobs:
           name: npm-audit-results
           path: npm-audit-results.json
 
-      #- name: SonarCloud Scan
-      #  if: success() || failure()
-      #  uses: SonarSource/sonarcloud-github-action@master
-      #  env:
-      #    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
       - uses: anchore/scan-action/download-grype@v4
         id: grype
 
