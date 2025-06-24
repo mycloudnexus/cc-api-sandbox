@@ -42,6 +42,7 @@ export const createApp = async (
   const api = new OpenAPIBackend({
     definition: process.env["SPEC_FILE"] ?? "./specs/moddedccapi_20240906.json",
     strict: false,
+    quick: true,
     handlers: {
       validationFail: async (c, req: ExpressReq, res: ExpressRes) =>
         res.status(400).json({ err: c.validation.errors }),
