@@ -20,6 +20,8 @@ import pinoHttp from "pino-http";
 import { Request as ExpressReq, Response as ExpressRes } from "express";
 import { setStartTime, heartbeat } from "./handlers/heartbeat";
 import pino from "pino";
+import { createOrder } from "./handlers/mef-order";
+import { createQuote } from "./handlers/mef-quote";
 
 export const createApp = async (
   log?: pino.Logger,
@@ -39,10 +41,16 @@ export const createApp = async (
 
   app.use("/", express.static("static"));
 
+  // if QUICK is true, will skip the validation, default value is false
+  const quick = process.env["QUICK"];
+  const quickBool = !(quick === "true" || quick === "false")
+    ? false
+    : Boolean(quick);
+
   const api = new OpenAPIBackend({
     definition: process.env["SPEC_FILE"] ?? "./specs/moddedccapi_20240906.json",
     strict: false,
-    quick: true,
+    quick: quickBool,
     handlers: {
       validationFail: async (c, req: ExpressReq, res: ExpressRes) =>
         res.status(400).json({ err: c.validation.errors }),
@@ -67,6 +75,8 @@ export const createApp = async (
    */
   api.register({
     Heartbeat: heartbeat,
+    createProductOrder: createOrder,
+    createQuote: createQuote,
   });
 
   await api.init();
