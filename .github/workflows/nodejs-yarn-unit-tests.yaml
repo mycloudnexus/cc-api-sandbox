@@ -62,6 +62,8 @@ jobs:
 
       - uses: anchore/scan-action/download-grype@v4
         id: grype
+        with:
+          grype-version: "0.94.0"
 
       - name: Vulnerability scan
         run: ${{steps.grype.outputs.cmd}} -v -o json --file output.json --fail-on high --only-fixed dir:.
