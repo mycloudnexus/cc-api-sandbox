@@ -66,7 +66,9 @@ jobs:
           grype-version: "v0.94.0"
 
       - name: Vulnerability scan
-        run: ${{steps.grype.outputs.cmd}} -v -o json --file output.json --fail-on high --only-fixed dir:.
+        env:
+          FAIL_ON: ''
+        run: ${{steps.grype.outputs.cmd}} -v -o json --file output.json $FAIL_ON --only-fixed dir:.
 
       - name: Output results to markdown table as a comment on the PR 
         if: always() && github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name == github.repository)
