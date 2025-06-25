@@ -47,6 +47,7 @@ function mockResponseForSpecifiedCase(
     code: 201,
     example: example,
   });
+
   return res.status(mockData.status).json(mockData.mock);
 }
 
