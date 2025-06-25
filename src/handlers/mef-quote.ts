@@ -33,7 +33,8 @@ export function createQuote(_c: Context, _req: Request, res: Response) {
     }
     return mock400Response(res);
   } catch (e) {
-    return mock400Response(res);
+    const err = e as Error;
+    return mock400Response(res, err.message);
   }
 }
 
@@ -49,10 +50,10 @@ function mockResponseForSpecifiedCase(
   return res.status(mockData.status).json(mockData.mock);
 }
 
-function mock400Response(res: Response) {
+function mock400Response(res: Response, reason?: string) {
   return res.status(422).json({
     code: "invalidBody",
-    reason: "api use case is not supported",
+    reason: reason ?? "api use case is not supported",
     message: "api use case is not supported",
   });
 }
