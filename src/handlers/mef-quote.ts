@@ -50,6 +50,7 @@ function mockResponseForSpecifiedCase(
 
   return res.status(mockData.status).json(mockData.mock);
 }
+
 function mock400Response(res: Response, reason?: string) {
   return res.status(422).json({
     code: "invalidBody",
