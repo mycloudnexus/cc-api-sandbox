@@ -23,15 +23,19 @@ export function createOrder(_c: Context, _req: Request, res: Response) {
     const requestPayload = _req.body as OrderPayload;
     const productItem = requestPayload["productOrderItem"][0];
     const action = productItem.action;
-    const type = productItem.product.productConfiguration["@type"];
-    const id = productItem.id;
+    let type;
+    if (DELETE_ACTION == action) {
+      type = productItem.id;
+    } else {
+      type = productItem.product.productConfiguration["@type"];
+    }
     if (action === ADD_ACTION && type === UNI_TYPE) {
       return mockResponseForSpecifiedCase(_c, res, "UNI-ADD-Order");
     } else if (action === ADD_ACTION && type === ELINE_TYPE) {
       return mockResponseForSpecifiedCase(_c, res, "Eline-ADD-Order");
-    } else if (action === DELETE_ACTION && id === UNI_TYPE) {
+    } else if (action === DELETE_ACTION && type === UNI_TYPE) {
       return mockResponseForSpecifiedCase(_c, res, "UNI-Delete-Order");
-    } else if (action === DELETE_ACTION && id === ELINE_TYPE) {
+    } else if (action === DELETE_ACTION && type === ELINE_TYPE) {
       return mockResponseForSpecifiedCase(_c, res, "Eline-Delete-Order");
     } else {
       return mock400Response(res);

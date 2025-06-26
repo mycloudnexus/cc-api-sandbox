@@ -66,6 +66,8 @@
   "resolutions": {
     "cross-spawn": "7.0.5",
     "path-to-regexp": "0.1.12",
-    "axios": "^1.8.2"
+    "axios": "^1.8.2",
+    "@babel/helpers": "7.26.10",
+    "@babel/runtime": "7.26.10"
   }
 }
