@@ -18,3 +18,7 @@ services:
     image: consoleconnect/emulator:latest
     ports:
       - "9000:9000"
+    environment:
+      - SPEC_FILE=${SPEC_FILE}
+    volumes:
+      - ./specs:/app/specs

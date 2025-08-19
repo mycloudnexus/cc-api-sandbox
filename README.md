@@ -30,6 +30,7 @@ Use Docker Compose to build and run the container
 
 ```bash
 docker compose up --build
+SPEC_FILE=./specs/cc_api_uat_20241025_update.json docker compose up --build
 ```
 
 ## Usage

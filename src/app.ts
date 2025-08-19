@@ -15,11 +15,14 @@
  */
 
 import OpenAPIBackend, { Request } from "openapi-backend";
-import express from "express";
+import express, {
+  Request as ExpressReq,
+  Response as ExpressRes,
+} from "express";
 import pinoHttp from "pino-http";
-import { Request as ExpressReq, Response as ExpressRes } from "express";
 import { setStartTime, heartbeat } from "./handlers/heartbeat";
 import pino from "pino";
+import addFormats from "ajv-formats";
 
 export const createApp = async (
   log?: pino.Logger,
@@ -29,6 +32,7 @@ export const createApp = async (
 
   app.use(express.json());
   app.set("json spaces", 4); // Mimic real api with correct formatting
+
   if (log) {
     app.use(
       pinoHttp({
@@ -39,14 +43,54 @@ export const createApp = async (
 
   app.use("/", express.static("static"));
 
+  // Initialize OpenAPI-Backend
   const api = new OpenAPIBackend({
     definition: process.env["SPEC_FILE"] ?? "./specs/moddedccapi_20240906.json",
     strict: false,
+    customizeAjv: (ajv) => {
+      addFormats(ajv, {
+        mode: "fast",
+        formats: [
+          "email",
+          "uri",
+          "url",
+          "date-time",
+          "uuid",
+          "ipv4",
+          "ipv6",
+          "iso-date-time",
+          "date",
+          "int32",
+        ],
+      });
+      ajv.addFormat("ObjectId", /^[a-f\d]{24}$/i);
+      ajv.addFormat(
+        "hostname",
+        /^(?!:\/\/)([a-zA-Z\d-]{1,63})\.([a-zA-Z]{2,63})(\.[a-zA-Z]{2,63})?$/gm,
+      );
+      ajv.addFormat("JSON", {
+        type: "string",
+        validate: (x) => {
+          try {
+            return typeof JSON.parse(x) == "object";
+          } catch {
+            return false;
+          }
+        },
+      });
+      ajv.addFormat(
+        "datetime (YYYY-MM-DDTHH:mm:ss.sssZ)",
+        /\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z)/i,
+      );
+      return ajv;
+    },
     handlers: {
-      validationFail: async (c, req: ExpressReq, res: ExpressRes) =>
-        res.status(400).json({ err: c.validation.errors }),
-      notFound: async (c, req: ExpressReq, res: ExpressRes) =>
-        res.status(404).json({ err: "not found" }),
+      validationFail: async (c, req: ExpressReq, res: ExpressRes) => {
+        return res.status(400).json({ err: c.validation.errors });
+      },
+      notFound: async (c, req: ExpressReq, res: ExpressRes) => {
+        return res.status(404).json({ err: "not found" });
+      },
       notImplemented: async (c, req: ExpressReq, res: ExpressRes) => {
         const { status, mock } = c.operation.operationId
           ? (c.api.mockResponseForOperation(c.operation.operationId) as {
@@ -69,6 +113,7 @@ export const createApp = async (
   });
 
   await api.init();
+
   app.use((req, res, next) => {
     void api
       .handleRequest(req as Request, req, res)
